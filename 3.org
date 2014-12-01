@@ -1,0 +1,242 @@
+#+STARTUP:indent
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+#+HTML_HEAD_EXTRA: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+#+BEGIN_COMMENT
+#+STYLE: <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+#+STYLE: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+#+END_COMMENT
+#+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil 
+#+TITLE: Mathematics for Electronics
+#+AUTHOR: Stephen Brown
+
+#+BEGIN_HTML
+<div class=ribbon>
+<a href="https://github.com/stsb11/gcse_theory">Fork me on GitHub</a>
+</div>
+<center>
+<imgzz src='' width=33%>
+</center>
+#+END_HTML
+
+* COMMENT Use as a template
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Learn It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+
+** Research It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: research
+:END:
+
+** Design It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: design
+:END:
+
+** Build It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: build
+:END:
+
+** Test It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: test
+:END:
+
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+
+** Document It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: document
+:END:
+
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+
+** Program It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: program
+:END:
+
+** Try It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+
+** Badge It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: badge
+:END:
+
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+
+e* Introduction
+[[file:img/pic.jpg]]
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: intro
+:END:
+** What are PIC chips?
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: research
+:END:
+Peripheral Interface Controllers are small silicon chips which can be programmed to perform useful tasks.
+In school, we tend to use Genie branded chips, like the C08 model you will use in this project. Others (e.g. PICAXE) are available.
+PIC chips allow you connect different inputs (e.g. switches) and outputs (e.g. LEDs, motors and speakers), and to control them using flowcharts.
+Chips such as these can be found everywhere in consumer electronic products, from toasters to cars. 
+
+While they might not look like much, there is more computational power in a single PIC chip used in school than there was in the space shuttle that went to the moon in the 60's!
+** When would I use a PIC chip?
+Imagine you wanted to make a flashing bike light; using an LED and a switch alone, you'd need to manually push and release the button to get the flashing effect. A PIC chip could be programmed to turn the LED off and on once a second.
+In a board game, you might want to have an electronic dice to roll numbers from 1 to 6 for you. 
+In a car, a circuit is needed to ensure that the airbags only deploy when there is a sudden change in speed, AND the passenger is wearing their seatbelt, AND the front or rear bumper has been struck. PIC chips can carry out their instructions very quickly, performing around 1000 instructions per second - as such, they can react far more quickly than a person can. 
+* Introduction
+- To be successful at electronics, you only need a small number of equations. 
+
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Ohm's Law
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- *V = IR*
+- *V* is Voltage, measured in Volts,
+- *I* is current, measured in Amperes (Amps for short),
+- *R* is resistance, measured in Ohms (\Omega{}).
+
+_Example_
+According to its datasheet, an LED can take a maximum of 3V, and has a safe current of up to 20mA. If powered by a 6v battery, what size resistor will be needed to protect it?
+
+Let’s aim for 2.5V and 20mA, to ensure we don’t have any problems. If we have 6V in the circuit, we need the resistor to remove *3.5V* (6 - 2.5) from the circuit, leaving 2.5V for the LED. We can then say that…
+
+V=3.5
+
+I=0.02
+
+Re-arranging the formula gives R = V / I
+
+Therefore R = 3.5 / 0.02 = *175Ω*
+
+As an aside, it turns out that 175Ω isn’t a standard resistor size we can buyfrom a shop, so we go to the next largest size, which is 180Ω (220Ω would also work well).
+
+** Electrical Power
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+*P = VI*			
+
+- Power (Watts) = Voltage x Current
+
+_Example_
+Is a 0.25W resistor adequate for the example above? 
+
+The amount of power the resistor has to dissipate can be calculated as… 
+
+P = 3.5 x 0.02 = *0.07W*
+
+- Since the resistor can dissipate up to 0.25W, this resistor could safely handle the current from up to three LEDs. 
+
+** Resistors in Series
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+To calculate the overall resistance achieved when connecting together resistors in series, we add them together. E.g.
+
+R_{T} = R_{1} + R_{2}
+
+_Example_ Two resistors are connected together in series in a circuit. The colour codes on the first resistor is green, blue, black, gold. The colour code on the second resistor has been rubbed off. When a multi-meter is placed across both resistors, the meter reads 276Ω. What is the resistance of the unmarked resistor?
+
+276 = 56 + R_{2}
+
+R_{2} = 276 - 56 = 220Ω
+
+** Potential Divider
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- The potential divider setup allows electronic engineers to create different voltage levels in a circuit. This can be useful when connecting analogue components to a PIC. 
+[[./img/pot_div.png]]
+V_{1} = (R_{1} / (R_{1} + R_{2})) x Supply voltage (V_{S})
+
+V_{2} = (R_{2} / (R_{1} + R_{2})) x Supply Voltage (V_{S})
+
+_Example_ A 9V battery supplies a potential divider.  Two 1kΩ resistors are used. What is the voltage at V_{1}?
+
+V_{1} = (1000 / (1000+1000)) x 9
+
+V_{1} = (1000 / 2000) x 9
+
+V_{1} = (0.5) x 9 = 4.5V 
+
+* Understanding Check
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Sample Questions
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+- A 9v DC motor motor rated at 0.673A is to be powered by a 12V supply. What size resistor should be used to make it run at it’s maximum speed?
+
+- A 60W lightbulb in a house is running on a standard 230V AC power supply. How much current does it draw?
+
+- UK fuses can be 1A, 3A, 5A or 13A. This refers to how much current can be drawn through the fuse without it “blowing”. What size fuse should be fitted to a 1600W hairdryer?
+
+- A circuit being designed has a 12V supply, but needs a 3V rail, to be made with a potential divider. Suggest two resistor values that could provide this, and confirm it in circuit wizard.
+
+- What’s the overall resistance achieved by connecting together 3x 100Ω resistors in series in a circuit?
+
+** Past Paper Questions
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+*June 2010, Q3c*. The following circuit diagram shows a simple potential divider light sensor circuit. 
+[[./img/2010_q3c.png]]
+(i) Name the component labelled R1. /(1 mark)/
+(ii) Name the component labelled R2. /(1 mark)/
+(iii) Calculate the output voltage when R1 is 1K, R2 is 2K and the supply voltage is 9V.
+
+Formula: 
+
+Working: 
+
+Answer with units: 
+
+/(4 marks)/
+
+*June 2012, Q6b*. Calculate the value of the total resistance of the following resistors in series.
+[[./img/2012_q6b.png]]
+Formula: 
+
+Calculation: 
+
+Answer:
+
+/(4 marks)/
+
+
+*June 2012, Q6d*. The circuit below is a light sensor. The resistance of the LDR is 5KΩ and the resistance of the fixed resistor is 10KΩ.
+[[./img/2012_q6d.png]]
+Calculate the output voltage (V2) when Vs is 9 Volts.
+
+Formula: 
+
+Calculation: 
+
+Answer:
+
+/(4 marks)/
+
+[[file:index.html][Return to homepage]]

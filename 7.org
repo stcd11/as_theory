@@ -1,0 +1,212 @@
+#+STARTUP:indent
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+#+HTML_HEAD_EXTRA: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+#+BEGIN_COMMENT
+#+STYLE: <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+#+STYLE: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+#+END_COMMENT
+#+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil 
+#+TITLE: Mechanisms
+#+AUTHOR: Stephen Brown
+
+#+BEGIN_HTML
+<div class=ribbon>
+<a href="https://github.com/stsb11/gcse_theory">Fork me on GitHub</a>
+</div>
+<center>
+<img src='./img/cam.gif' width=35%>
+</center>
+#+END_HTML
+
+* COMMENT Use as a template
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Learn It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+
+** Research It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: research
+:END:
+
+** Design It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: design
+:END:
+
+** Build It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: build
+:END:
+
+** Test It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: test
+:END:
+
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+
+** Document It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: document
+:END:
+
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+
+** Program It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: program
+:END:
+
+** Try It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+
+** Badge It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: badge
+:END:
+
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+
+e* Introduction
+[[file:img/pic.jpg]]
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: intro
+:END:
+** What are PIC chips?
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: research
+:END:
+Peripheral Interface Controllers are small silicon chips which can be programmed to perform useful tasks.
+In school, we tend to use Genie branded chips, like the C08 model you will use in this project. Others (e.g. PICAXE) are available.
+PIC chips allow you connect different inputs (e.g. switches) and outputs (e.g. LEDs, motors and speakers), and to control them using flowcharts.
+Chips such as these can be found everywhere in consumer electronic products, from toasters to cars. 
+
+While they might not look like much, there is more computational power in a single PIC chip used in school than there was in the space shuttle that went to the moon in the 60's!
+** When would I use a PIC chip?
+Imagine you wanted to make a flashing bike light; using an LED and a switch alone, you'd need to manually push and release the button to get the flashing effect. A PIC chip could be programmed to turn the LED off and on once a second.
+In a board game, you might want to have an electronic dice to roll numbers from 1 to 6 for you. 
+In a car, a circuit is needed to ensure that the airbags only deploy when there is a sudden change in speed, AND the passenger is wearing their seatbelt, AND the front or rear bumper has been struck. PIC chips can carry out their instructions very quickly, performing around 1000 instructions per second - as such, they can react far more quickly than a person can. 
+* Introduction
+- In order to make useful new machines and products, a systems engineer needs to be able to understand electronics (to create control circuitry), drive systems (to understand different electromechanical options such as servo motors) and mechanisms in order to produce motion of the required type to solve the problem at hand. 
+- This typically involves understanding gears, belt/pulley systems and different linkages. You need to ensure you know of suitable linkages to convert between different types of motion. 
+- BBC Bitesize has a superb set of pages (with interactive demonstrations) showing different mechanisms, and is available [[http://www.bbc.co.uk/schools/gcsebitesize/design/systemscontrol/mechanismsrev1.shtml][here]]. 
+
+* Converting motion
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Rotary to Oscillating
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- The *Treadle linkage* (seen in windscreen wipers) is used to convert rotary motion to oscillating motion, or vice-versa. Pre-electricity sewing machines often had a foot operated treadle that was used to drive a wheel. 
+[[./img/treadle.png]]
+- In the diagram, the rotary prime mover is connected to an connecting rod (or /"conrod"/ for short) on a fixed pivot, causing smooth oscillating motion as the crank is turned. 
+
+- The *Peg and slot* linkage performs the same conversion of motion, but the motion is not smooth. 
+[[./img/peg_slot.png]]
+- In the diagram above, as the rear disk rotates clockwise initially, the slot part will move quickly to the right, as the peg is close to the pivot point at the top. Once the peg is towards the bottom of the wheel (after 180 degrees of rotation), the slot part will move more slowly, as it is further from the pivot. 
+** Rotary to Reciprocating/Linear
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- *Rack and Pinion gear:* Used to convert rotary motion to linear motion, as seen in steering systems on cars, lock-gates on rivers, and on  mountain railways. This system has many applications, and a large percentage of both GCSE and A level system design questions can be solved with the creative use of these. 
+[[./img/rack_pinion.png]]
+- *Crank, link and Slider:* Another excellent method of achieving this conversion. Remember that when these systems in the real world, the output slider will need guides to help it move in the desired way.
+[[./img/crank_slider.png]]
+- *Cam and follower:* A shaped piece of material, fixed to a rotating shaft, cams are found in car engines (where the exploding petrol in the car's cylinders force followers up against a shaft containing several cams, causing it to spin) and many other mechanisms.  
+[[./img/cam.gif]]
+- An excellent guide to cams can be seen on the BBC Bitesize site, [[http://www.bbc.co.uk/schools/gcsebitesize/design/systemscontrol/mechanismsrev4.shtml][here]].
+* Recap
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Past Paper Questions
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+*June 2007, Q7.* This question is about mechanisms and mechanical components. The chain and sprocket shown below is part of a drive system for a cooling fan in a tram. The smaller sprocket is connected to an electric motor and the larger sprocket is connected to the fan.
+[[./img/2007_q7.png]]
+The motor spins at 10 000 revolutions per minute (rpm).
+
+(a) Calculate the speed of the fan.
+
+Formula:
+
+Calculation:
+
+Answer with units: /(4 marks)/
+
+(b) Discuss the use of chain drives compared with other drive systems. /(4 marks)/
+
+(c) This part of the question is about a hand brake for a railway truck. Part of the truck is drawn below.
+[[./img/2007_q7ci.png]]
+(i) Draw a mechanical device between the fixed beam and the brake shoe, which will allow the driver to manually apply the brake shoe to the wheel.
+
+Complete the diagram to ensure that your solution will prevent the truck moving when the user lets go of the operating handle all parts you add are labelled.
+
+Marks will be awarded for designing a mechanical device that will force the brake shoe onto the wheel /(4 marks)/
+fixing the device to the fixed beam and the brake shoe /(2 marks)/
+quality of notes and sketches. /(2 marks)/
+
+(ii) State two advantages of your mechanism shown above for this application. /(2 marks)/
+
+(iii) Explain how your response to part (c)(i) could be modified to make it easier for the user to apply the hand brake. /(2 marks)/
+
+*June 2010, Q5a.* (iv) Sketch on the diagram below how a micro-switch could sense that the roof vent is closed. Marks will be awarded for: -
+a component mounted correctly /(1 mark)/
+the ability to sense that the vent was closed /(1 mark)/
+a good quality labelled sketch of the sensing system. /(2 marks)/
+[[./img/2010_q5a.png]]
+
+(v) Describe how your system in part (a) (iv) works. /(3 marks)/
+
+*June 2012, Q3.* (b) Draw and name a mechanism that will change rotary motion into oscillating motion. Label all parts for 4 marks. /(4 marks)/
+
+3 (c) Draw and name a mechanism that will transfer rotary motion through 90°. Label all parts for 4 marks. /(4 marks)/
+
+3 (d) Draw and name a mechanism that will increase or decrease the speed of rotation. Label all parts for 4 marks. /(4 marks)/
+
+*June 2012, Q4.* This question is about a car windscreen wiper system.
+4 (a) On the diagram below draw a mechanism that connects the motor to the wipers so that the two wipers move continually in the required motion.
+[[./img/2012_q4a.png]]
+Marks will be awarded for:
+adding labels to the diagram
+
+moving a wiper
+
+moving a wiper in correct motion
+
+moving both wipers in correct motion
+
+moving both wipers continuously
+
+drawing neatly in proportion. /(6 marks)/
+
+The car windscreen wiper system uses a cam and a switch so that the wipers always stop at the bottom of the windscreen when the driver turns them off.
+
+4 (b) Design a cam that will ensure that the wipers always stop at the same position. The switch should only be operated for a quarter of a turn. Draw the cam outline between the dotted guide circles: /(4 marks)/
+[[./img/2012_q4b.png]]
+
+4 (c) Name the switch shown above. 	/(1 mark)/
+
+4 (d) On the circuit below connect the motor and both switches to the power supply to ensure that the wipers operate when the Cam switch or the Drivers switch is ON. Both switches are shown not operated (OFF). /(5 marks)/
+[[./img/2012_q4d.png]]
+
+
+[[file:index.html][Return to homepage]]
