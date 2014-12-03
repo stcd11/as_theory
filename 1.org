@@ -111,28 +111,41 @@ In a car, a circuit is needed to ensure that the airbags only deploy when there 
 :END:
 - Before you can do anything to design and create new, original projects, you'll need to understand three fundamental electronic concepts. 
 - *Voltage*, is the difference in energy level between two points in a circuit, which will allow electrons to move through a conductor. The more difference in energy levels there is, the larger the amount of current can be drawn, and the larger item they can power. A basic red LED might only need 2.7V to run, whereas a laptop might need 24V, and a large electric motor moving a lift might need 415V to operate. 
+#+BEGIN_HTML
+<br>
+#+END_HTML
 - **Current** is a measure of how many electrons pass a particular point in the circuit per second. Higher current (/measured in Amps/) means faster electron flow in the circuit. The process of moving electrons through a material generates frictional heat. If the wire used in a product is too thin, and too much current passes through it, the wire will melt! This is the principal on which fuses are made. 
+#+BEGIN_HTML
+<br>
+#+END_HTML
 - **Resistance** is a measure of to what extent a material resists the flow of current in a circuit, and is measured in Ohms. Good conductors of electricity (like copper and gold) have very low resistance (1-2 \Omega{}), and insulators (like rubber and plastic) have a high resistance (several million Ohms). 
+#+BEGIN_HTML
+<br>
+#+END_HTML
 - Another explanation (with interactive demonstrations) can be seen [[https://www.bournetoinvent.com/projects/7-SC-Torch/pages/1_Lesson.html][here]].
 - Another explanation of the concepts can be seen over at [[https://learn.sparkfun.com/tutorials/voltage-current-resistance-and-ohms-law][SparkFun]]. 
 - Ohm's law is the mathematical formula that shows the relationship between Voltage (V), Current (I) and Resistance (R). 
   - *V = IR*
-
+#+BEGIN_HTML
+<br>
+#+END_HTML
 
 - In the exam, you'll sometimes be asked to calculate one of the values, given two of the others.
 - E.g. /According to its datasheet, an LED can take a maximum of 2.5v, and has a safe current of up to 20mA. If powered by a 6v battery, what size resistor will be needed to protect it?/
 - LEDs have very low internal resistance, and will blow instantaneously if they try and handle all too much current.
-
-
+#+BEGIN_HTML
+<br>
+#+END_HTML
 - If we have a 6V potential difference in the circuit, we need to remove 3.5V (6V - 2.5V) from the circuit, to leave 2.5V for the LED. *V=2.5*
 - Just like any other physics question, we need to use the correct SI unit to perform our calculation. 1000mA = 1A, so 100mA = 0.1A, 10mA = 0.01A and so 20mA = 0.02A. *I = 0.02*
 - We now have values for V and I, and we need to find R. Through basic re-arrangement, our formula becomes: *R = V / I*
   - R = V / I
   - R = 3.5 / 0.02
   - R = 175\Omega
-
+#+BEGIN_HTML
+<br>
+#+END_HTML
 - It turns out that 175Ω isn’t a standard resistor size we can buy, so we go to the next largest size, which is 180Ω (220Ω would also work here).
-
 ** Electrical Power
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: try
@@ -145,18 +158,63 @@ In a car, a circuit is needed to ensure that the airbags only deploy when there 
   - P = 3.5 x 0.02 = *0.07W*
   - So a 0.25W resistor would be suitable. In fact, it would be suitable for carrying the current of up to 3 LEDs. 
 
-** Resistance 
+** Series and Parallel Resistance 
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
 :END:
 - *Resistors in Series*
 - To calculate the overall resistance achieved when connecting together resistors in series, we add them together. E.g.
   - R_{T} = R_{1} + R_{2}
-
-
+- Example: Two resistors are connected together in series in a circuit. The colour codes on the first resistor is green, blue, black, gold. The colour code on the second resistor has been rubbed off. When a multi-meter is placed across both resistors, the meter reads 276Ω. What is the resistance of the unmarked resistor?
+  - 276 = 56 + R_{2}
+  - R_{2} = 276 - 56 = 220\Omega 
+#+BEGIN_HTML
+<br>
+#+END_HTML
 - *Resistors in Parallel*
   - 1/R_{T} = 1/R_{1} + 1/R_{2} + 1/R_{3}…
-- CHANGE
+** Potential Divider
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- A potential divider allows engineers to reduce the amount of voltage in a circuit. This is one of the most elemental circuits, and is used in various forms in PIC circuit design.
+[[./img/pot_div.png]]
+- V_{1} = (R_{1} / (R_{1} + R_{2})) x Supply voltage (V_{S})
+- V_{2} = (R_{2} / (R_{1} + R_{2})) x Supply Voltage (V_{S})
+#+BEGIN_HTML
+<br>
+#+END_HTML
+- By placing two resistors in series, different voltages can be achieved.
+- This is handy when connecting analogue sensors to PIC chips. 
+- It's also useful to put a PD before the base of a transistor (come back to this statement later in the course when you've covered more of the theory!) to trigger different components.
+  - While only a low current is available (resistors reduce current flow), having an LDR (resistance increases as light level drops) and a fixed (usually 10k) resistor in a potential divider setup will allow varying amounts of voltage to be sent into the analogue pin of the PIC.
+  - The Genie PIC chips we have contain an 8-bit ADC (Analogue to Digital Convertor), which convert a voltage between 0-5V to a number between 0 and 255.
+[[./img/ldr.png]]
+  - When the light level is very high (/1000 [[http://en.wikipedia.org/wiki/Lux][lux]] in the shot above/), the resistance in the LDR drops to around 400\Omega. As a result, most of the electrical energy in the potential divider will flow into the analogue input, as this is easier than having to travel through a 10k resistor. 
+  - In this case, is we asuming 400\Omega of resistance through the LDR, and a 10k\Omega resistor are forming a potential divider, we can use the first of the formulae shown above...
+      1. V_{1} = (R_{1} / (R_{1} + R_{2})) x Supply voltage (V_{S})
+      2.  V_{1} = (10000 / (10000 + 400)) x 5
+      3.  V_{1} = (10000 / 10400) x 5
+      4.  V_{1} = 0.962 x 5
+      5.  V_{1} = 4.81
+#+BEGIN_HTML
+<br>
+#+END_HTML
+- There would be a 4.81V potential difference at V_{1}. 
+  - The ADC will interpret this through a simple process...
+    - 4.81 / 5 = 0.962 (5 is the input voltage for the PIC in this demo)
+    - 0.962 * 255 = *245.31*
+    - So we report to the PIC chip that we've got an analogue reading of 245. 
+#+BEGIN_HTML
+<br>
+#+END_HTML
+- When the light level drops, the LDR's resistance will rise up to a few million Ohms. This will mean that by the time current has passed through the LDR, much of the energy will have been dissipated (in the form of heat), leaving a much smaller potential difference between the analogue input and 0V. The ADC will interpret this voltage as a low number.
+#+BEGIN_HTML
+<br>
+#+END_HTML
+- Despite the temptation to do so, a PD  *isn't* suitable for creating power rails that need to power a load (e.g. Stepping down 12V to 3V to drive a motor), as all the current you'd need to draw will also have to pass through R_{2} first. 
+
+  - Further reading: [[https://dlnmh9ip6v2uc.cloudfront.net/r/600-600/assets/4/0/3/a/e/511948ffce395f7f47000000.png][Sparkfun]]
 
 
 * Component Identification
