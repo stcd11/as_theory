@@ -131,52 +131,32 @@ In a car, a circuit is needed to ensure that the airbags only deploy when there 
   - R = 3.5 / 0.02
   - R = 175\Omega
 
-** Try it
+- It turns out that 175Ω isn’t a standard resistor size we can buy, so we go to the next largest size, which is 180Ω (220Ω would also work here).
+
+** Electrical Power
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: try
 :END:
-- Resistors are components which are designed to provide carefully controlled amounts of resistance; ideal when designing circuits. The coloured bands on a resistor tell you what the value of the resistor is. 
+- Power is the product of Voltage and Current, and is measured in Watts. This is expressed mathematically as:
+  - P = V I
 
-|  [20] | [15]   | [15]     |
-|-------+--------+----------|
-| Value | Colour | Mnemonic |
-|-------+--------+----------|
-|     0 | Black  | Bye      |
-|     1 | Brown  | Bye      |
-|     2 | Red    | Rosie    |
-|     3 | Orange | Off      |
-|     4 | Yellow | You      |
-|     5 | Green  | Go       |
-|     6 | Blue   | Bristol  |
-|     7 | Violet | Via      |
-|     8 | Grey   | Great    |
-|     9 | White  | Western  |
+- *Example Use:* Is a 0.25W resistor adequate for the LED example above? 
+  - The amount of power the resistor has to dissipate can be calculated as… 
+  - P = 3.5 x 0.02 = *0.07W*
+  - So a 0.25W resistor would be suitable. In fact, it would be suitable for carrying the current of up to 3 LEDs. 
 
-- To read the value, hold the resistor you want with the gold band on the right-hand side. The gold band indicates that the resistor is accurate to +/-5%.
-- The first band (on the left) gives you the value of the first digit.
-- The second band gives you the value of the next digit.
-- The third band tells you how many zeroes to add to get the value of the resistor.
-- For instance, a resistor which is yellow, violet, orange, gold would be...
-- Yellow (so write down 4)
-- Violet (so write a 7 next to the 4)
-- Orange (so write three zeroes next to the other digits)
-- So this would be a 47000\Omega resistor
-
-- Get someone to give you 4 different resistors. Read the coloured bands to see what their values are, and then use the [[https://www.bournetoinvent.com/projects/soldering_license/step_5.html][*multimeter*]] to confirm. 
-- Choosing the correct setting to measure DC Voltage (DCV) is the same as for measuring resistance. It doesn't really make a difference, but its more "correct" to use the black (common) probe for the negative end of the battery, and the red on the right.
--  Use the multimeter to discover how many volts each of the following produces:
-	- Square battery (PP3)
-    - AA battery
-    - AAA battery
-    - CR2032
-** One more thing...
+** Resistance 
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
 :END:
-- If you connect the positive terminal of a battery directly to the negative (e.g. with a wire), the battery gets very hot. The battery rapidly looses all its charge.
-- What's happening is that because there is no "load" on the circuit (no components to pass through to slow the current flow), electrons are able to fly around the battery unimpeded, as fast as they possibly can.
-- The ultra-fast movement of electrons generates a lot of heat. If the power source is one designed to carry a lot of current (e.g. a car battery) and it is shorted out, this can cause the battery to spark or even explode! This is why mechanics are very careful not to drop (metal) spanners on top of car batteries. 
-- Then this happens, this is called a **short circuit**, or "short". 
+- *Resistors in Series*
+- To calculate the overall resistance achieved when connecting together resistors in series, we add them together. E.g.
+  - R_{T} = R_{1} + R_{2}
+
+
+- *Resistors in Parallel*
+  - 1/R_{T} = 1/R_{1} + 1/R_{2} + 1/R_{3}…
+
 
 
 * Component Identification

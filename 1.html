@@ -145,8 +145,8 @@ for the JavaScript code in this tag.
 <li><a href="#sec-1">1. Introduction</a>
 <ul>
 <li><a href="#sec-1-1">Ohm's Law</a></li>
-<li><a href="#sec-1-2">Try it</a></li>
-<li><a href="#sec-1-3">One more thing&#x2026;</a></li>
+<li><a href="#sec-1-2">Electrical Power</a></li>
+<li><a href="#sec-1-3">Resistance</a></li>
 </ul>
 </li>
 <li><a href="#sec-2">2. Component Identification</a>
@@ -218,164 +218,65 @@ for the JavaScript code in this tag.
 </li>
 </ul>
 </li>
+
+<li>It turns out that 175Ω isn’t a standard resistor size we can buy, so we go to the next largest size, which is 180Ω (220Ω would also work here).
+</li>
 </ul>
 </div>
 </div>
 
 <div id="outline-container-sec-1-2" class="outline-3 try">
-<h3 id="sec-1-2">Try it</h3>
+<h3 id="sec-1-2">Electrical Power</h3>
 <div class="outline-text-3" id="text-1-2">
 <ul class="org-ul">
-<li>Resistors are components which are designed to provide carefully controlled amounts of resistance; ideal when designing circuits. The coloured bands on a resistor tell you what the value of the resistor is. 
+<li>Power is the product of Voltage and Current, and is measured in Watts. This is expressed mathematically as:
+<ul class="org-ul">
+<li>P = V I
 </li>
 </ul>
+</li>
 
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="right" />
-
-<col  class="left" />
-
-<col  class="left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="right">&#xa0;</th>
-<th scope="col" class="left">&#xa0;</th>
-<th scope="col" class="left">&#xa0;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="right">Value</td>
-<td class="left">Colour</td>
-<td class="left">Mnemonic</td>
-</tr>
-</tbody>
-<tbody>
-<tr>
-<td class="right">0</td>
-<td class="left">Black</td>
-<td class="left">Bye</td>
-</tr>
-
-<tr>
-<td class="right">1</td>
-<td class="left">Brown</td>
-<td class="left">Bye</td>
-</tr>
-
-<tr>
-<td class="right">2</td>
-<td class="left">Red</td>
-<td class="left">Rosie</td>
-</tr>
-
-<tr>
-<td class="right">3</td>
-<td class="left">Orange</td>
-<td class="left">Off</td>
-</tr>
-
-<tr>
-<td class="right">4</td>
-<td class="left">Yellow</td>
-<td class="left">You</td>
-</tr>
-
-<tr>
-<td class="right">5</td>
-<td class="left">Green</td>
-<td class="left">Go</td>
-</tr>
-
-<tr>
-<td class="right">6</td>
-<td class="left">Blue</td>
-<td class="left">Bristol</td>
-</tr>
-
-<tr>
-<td class="right">7</td>
-<td class="left">Violet</td>
-<td class="left">Via</td>
-</tr>
-
-<tr>
-<td class="right">8</td>
-<td class="left">Grey</td>
-<td class="left">Great</td>
-</tr>
-
-<tr>
-<td class="right">9</td>
-<td class="left">White</td>
-<td class="left">Western</td>
-</tr>
-</tbody>
-</table>
-
+<li><b>Example Use:</b> Is a 0.25W resistor adequate for the LED example above? 
 <ul class="org-ul">
-<li>To read the value, hold the resistor you want with the gold band on the right-hand side. The gold band indicates that the resistor is accurate to +/-5%.
+<li>The amount of power the resistor has to dissipate can be calculated as… 
 </li>
-<li>The first band (on the left) gives you the value of the first digit.
+<li>P = 3.5 x 0.02 = <b>0.07W</b>
 </li>
-<li>The second band gives you the value of the next digit.
-</li>
-<li>The third band tells you how many zeroes to add to get the value of the resistor.
-</li>
-<li>For instance, a resistor which is yellow, violet, orange, gold would be&#x2026;
-</li>
-<li>Yellow (so write down 4)
-</li>
-<li>Violet (so write a 7 next to the 4)
-</li>
-<li>Orange (so write three zeroes next to the other digits)
-</li>
-<li>So this would be a 47000&Omega; resistor
-</li>
-
-<li>Get someone to give you 4 different resistors. Read the coloured bands to see what their values are, and then use the <a href="https://www.bournetoinvent.com/projects/soldering_license/step_5.html"><b>multimeter</b></a> to confirm. 
-</li>
-<li>Choosing the correct setting to measure DC Voltage (DCV) is the same as for measuring resistance. It doesn't really make a difference, but its more "correct" to use the black (common) probe for the negative end of the battery, and the red on the right.
-</li>
-<li><p>
-Use the multimeter to discover how many volts each of the following produces:
-</p>
-<ul class="org-ul">
-<li>Square battery (PP3)
-</li>
-</ul>
-<ul class="org-ul">
-<li>AA battery
-</li>
-<li>AAA battery
-</li>
-<li>CR2032
+<li>So a 0.25W resistor would be suitable. In fact, it would be suitable for carrying the current of up to 3 LEDs. 
 </li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
+
 <div id="outline-container-sec-1-3" class="outline-3 learn">
-<h3 id="sec-1-3">One more thing&#x2026;</h3>
+<h3 id="sec-1-3">Resistance</h3>
 <div class="outline-text-3" id="text-1-3">
 <ul class="org-ul">
-<li>If you connect the positive terminal of a battery directly to the negative (e.g. with a wire), the battery gets very hot. The battery rapidly looses all its charge.
+<li><b>Resistors in Series</b>
 </li>
-<li>What's happening is that because there is no "load" on the circuit (no components to pass through to slow the current flow), electrons are able to fly around the battery unimpeded, as fast as they possibly can.
+<li>To calculate the overall resistance achieved when connecting together resistors in series, we add them together. E.g.
+<ul class="org-ul">
+<li>R<sub>T</sub> = R<sub>1</sub> + R<sub>2</sub>
 </li>
-<li>The ultra-fast movement of electrons generates a lot of heat. If the power source is one designed to carry a lot of current (e.g. a car battery) and it is shorted out, this can cause the battery to spark or even explode! This is why mechanics are very careful not to drop (metal) spanners on top of car batteries. 
+</ul>
 </li>
-<li>Then this happens, this is called a <b><b>short circuit</b></b>, or "short". 
+</ul>
+
+
+<ul class="org-ul">
+<li><b>Resistors in Parallel</b>
+<ul class="org-ul">
+<li>1/R<sub>T</sub> = 1/R<sub>1</sub> + 1/R<sub>2</sub> + 1/R<sub>3</sub>…
+</li>
+</ul>
 </li>
 </ul>
 </div>
 </div>
 </div>
+
 
 
 <div id="outline-container-sec-2" class="outline-2 activity">
