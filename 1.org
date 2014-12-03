@@ -156,7 +156,7 @@ In a car, a circuit is needed to ensure that the airbags only deploy when there 
 
 - *Resistors in Parallel*
   - 1/R_{T} = 1/R_{1} + 1/R_{2} + 1/R_{3}…
-
+- CHANGE
 
 
 * Component Identification
