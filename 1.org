@@ -6,12 +6,12 @@
 #+STYLE: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
 #+END_COMMENT
 #+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil 
-#+TITLE: Basics
+#+TITLE: Mathematics
 #+AUTHOR: Stephen Brown
 
 #+BEGIN_HTML
 <div class=ribbon>
-<a href="https://github.com/stsb11/gcse_theory">Fork me on GitHub</a>
+<a href="https://github.com/stsb11/as_theory">Fork me on GitHub</a>
 </div>
 <center>
 <imgzz src='' width=33%>
@@ -105,7 +105,7 @@ In a car, a circuit is needed to ensure that the airbags only deploy when there 
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: activity
 :END:
-** Voltage, Resistance and Current
+** Ohm's Law
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
 :END:
@@ -115,6 +115,22 @@ In a car, a circuit is needed to ensure that the airbags only deploy when there 
 - **Resistance** is a measure of to what extent a material resists the flow of current in a circuit, and is measured in Ohms. Good conductors of electricity (like copper and gold) have very low resistance (1-2 \Omega{}), and insulators (like rubber and plastic) have a high resistance (several million Ohms). 
 - Another explanation (with interactive demonstrations) can be seen [[https://www.bournetoinvent.com/projects/7-SC-Torch/pages/1_Lesson.html][here]].
 - Another explanation of the concepts can be seen over at [[https://learn.sparkfun.com/tutorials/voltage-current-resistance-and-ohms-law][SparkFun]]. 
+- Ohm's law is the mathematical formula that shows the relationship between Voltage (V), Current (I) and Resistance (R). 
+  - *V = IR*
+
+
+- In the exam, you'll sometimes be asked to calculate one of the values, given two of the others.
+- E.g. /According to its datasheet, an LED can take a maximum of 2.5v, and has a safe current of up to 20mA. If powered by a 6v battery, what size resistor will be needed to protect it?/
+- LEDs have very low internal resistance, and will blow instantaneously if they try and handle all too much current.
+
+
+- If we have a 6V potential difference in the circuit, we need to remove 3.5V (6V - 2.5V) from the circuit, to leave 2.5V for the LED. *V=2.5*
+- Just like any other physics question, we need to use the correct SI unit to perform our calculation. 1000mA = 1A, so 100mA = 0.1A, 10mA = 0.01A and so 20mA = 0.02A. *I = 0.02*
+- We now have values for V and I, and we need to find R. Through basic re-arrangement, our formula becomes: *R = V / I*
+  - R = V / I
+  - R = 3.5 / 0.02
+  - R = 175\Omega
+
 ** Try it
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: try

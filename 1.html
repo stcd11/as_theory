@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<title>Basics</title>
+<title>Mathematics</title>
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <style type="text/css">
@@ -137,14 +137,14 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">Basics</h1>
+<h1 class="title">Mathematics</h1>
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
 <li><a href="#sec-1">1. Introduction</a>
 <ul>
-<li><a href="#sec-1-1">Voltage, Resistance and Current</a></li>
+<li><a href="#sec-1-1">Ohm's Law</a></li>
 <li><a href="#sec-1-2">Try it</a></li>
 <li><a href="#sec-1-3">One more thing&#x2026;</a></li>
 </ul>
@@ -158,7 +158,7 @@ for the JavaScript code in this tag.
 </div>
 </div>
 <div class=ribbon>
-<a href="https://github.com/stsb11/gcse_theory">Fork me on GitHub</a>
+<a href="https://github.com/stsb11/as_theory">Fork me on GitHub</a>
 </div>
 <center>
 <imgzz src='' width=33%>
@@ -169,7 +169,7 @@ for the JavaScript code in this tag.
 <div class="outline-text-2" id="text-1">
 </div>
 <div id="outline-container-sec-1-1" class="outline-3 learn">
-<h3 id="sec-1-1">Voltage, Resistance and Current</h3>
+<h3 id="sec-1-1">Ohm's Law</h3>
 <div class="outline-text-3" id="text-1-1">
 <ul class="org-ul">
 <li>Before you can do anything to design and create new, original projects, you'll need to understand three fundamental electronic concepts. 
@@ -184,9 +184,44 @@ for the JavaScript code in this tag.
 </li>
 <li>Another explanation of the concepts can be seen over at <a href="https://learn.sparkfun.com/tutorials/voltage-current-resistance-and-ohms-law">SparkFun</a>. 
 </li>
+<li>Ohm's law is the mathematical formula that shows the relationship between Voltage (V), Current (I) and Resistance (R). 
+<ul class="org-ul">
+<li><b>V = IR</b>
+</li>
+</ul>
+</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>In the exam, you'll sometimes be asked to calculate one of the values, given two of the others.
+</li>
+<li>E.g. <i>According to its datasheet, an LED can take a maximum of 2.5v, and has a safe current of up to 20mA. If powered by a 6v battery, what size resistor will be needed to protect it?</i>
+</li>
+<li>LEDs have very low internal resistance, and will blow instantaneously if they try and handle all too much current.
+</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>If we have a 6V potential difference in the circuit, we need to remove 3.5V (6V - 2.5V) from the circuit, to leave 2.5V for the LED. <b>V=2.5</b>
+</li>
+<li>Just like any other physics question, we need to use the correct SI unit to perform our calculation. 1000mA = 1A, so 100mA = 0.1A, 10mA = 0.01A and so 20mA = 0.02A. <b>I = 0.02</b>
+</li>
+<li>We now have values for V and I, and we need to find R. Through basic re-arrangement, our formula becomes: <b>R = V / I</b>
+<ul class="org-ul">
+<li>R = V / I
+</li>
+<li>R = 3.5 / 0.02
+</li>
+<li>R = 175&Omega;
+</li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
+
 <div id="outline-container-sec-1-2" class="outline-3 try">
 <h3 id="sec-1-2">Try it</h3>
 <div class="outline-text-3" id="text-1-2">
