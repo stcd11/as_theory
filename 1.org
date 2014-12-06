@@ -173,7 +173,7 @@ In a car, a circuit is needed to ensure that the airbags only deploy when there 
 #+END_HTML
 - *Resistors in Parallel*
   - 1/R_{T} = 1/R_{1} + 1/R_{2} + 1/R_{3}…
-** Potential Divider
+** The Potential Divider
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
 :END:
@@ -216,50 +216,49 @@ In a car, a circuit is needed to ensure that the airbags only deploy when there 
 
   - Further reading: [[https://dlnmh9ip6v2uc.cloudfront.net/r/600-600/assets/4/0/3/a/e/511948ffce395f7f47000000.png][Sparkfun]]
 
-
-* Component Identification
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: activity
-:END:
-** Past Paper Questions
+** Transistors 
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
 :END:
-- Before you can start to read circuit diagrams (and go on to create new ones), you'll need to be able to identify the basic electronic component symbols. These questions are from actual past exam papers, so are a great way to build your skill set...
-- *June 2010, Q3*. You are advised to spend about 20 minutes on this question. This question is about identifying components and their uses.
+- Current Gain = Collector Current / Base Current
+* Mechanisms
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Ratio of Simple Gears / Pulleys
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- Gear Ratio = Number of teeth on driven gear / Number of teeth on driver gear
+- Velocity Ratio = Diameter of driven pulley / Diameter of driver pulley
+- Output Speed = Input speed /Gear (or velocity) ratio
 
-(a) For the following electronic components, give the component name and the electronic building block /(input, process or output)/ it would be used for. /(10 marks)/
+** Ratio of Simple Gears / Pulleys
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- Mechanical Advantage
+- Mechanical Advantage (MA) = Load / Effort
 
-[[./img/2010_q3.png]]
+** Forces
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- Moments = Force x Distance
+- Sum of clockwise moments = sum of anti-clockwise moments
 
-- *June 2011, Q2*. You should spend about 20 minutes on this question. This question is about identifying components and stating if they are analogue or digital.
-
-(a) Give the Component name for the following electronic components, and tick the box to show whether a component is digital or analogue.
-
-[[./img/2011_q2.png]]
-
-(b) Circle the method that MP3 players use to store music tracks.
-Analogue	Digital		FER		Logic	(1 mark)
-
-(c) Clocks can have either analogue or digital displays to show the time.
-2 (c) (i) Sketch a clock with an analogue display. (1 mark)
-
-2 (c) (ii) Sketch a clock with a digital display. (1 mark)
-
-(d) Electronic data can be recorded and stored in either digital or analogue format.
-
-2 (d) (i) Give one advantage of recording data in a digital format. (2 marks)
-
-2 (d) (ii) Give one advantage of recording data in an analogue format. (2 marks)
-
-*June 2012, Q5b*. This question is about a simple coffee vending machine. The hot water valve is controlled by the coffee vending machine control system. Name the most suitable component to operate the valve. (1 mark)
-
-*June 2012, Q6*. You are advised to spend about 15 minutes on this question. This question is about components. (a) Identify the following component symbols. /(6 marks)/
-
-[[./img/2012_q6.png]]
-
-*June 2012, Q6c*. Name this component. /(2 marks)/
-
-[[./img/2012_q6c.png]]
+* Practice questions
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Recap
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+1. A 9v DC motor motor rated at 0.673A is to be powered by a 12v supply. What size resistor should be used to make it run at it’s maximum speed?
+2. 	i) A 60W lightbulb in a house is running on a standard 240v AC power supply. How much current does it draw?
+	ii) UK fuses can be 1A, 3A, 5A or 13A. This refers to how much current can be drawn through the fuse without it “blowing”. What size fuse should be fitted to a 1600W hairdryer?
+3. A circuit being designed has a 12v supply, but needs a 3v rail, to be made with a potential divider. Suggest two resistor values that could provide this, and confirm it in circuit wizard.
+4. What’s the overall resistance achieved by connecting together 3 100Ω resistors in series in a circuit?
 
 [[file:index.html][Return to homepage]]
