@@ -1,140 +1,57 @@
-/*GCSE Colours*/
-/*@scheme-color: #339900;;
-@scheme-color-secondary: #d5ffc0;
-*/
-/*YEAR 7 Colours - Systems & Control*/
-/* 
-@scheme-color: #A30000;
+/*YEAR 7 Colours*/
+/*
+@scheme-color: #0071BB;
 @scheme-color-secondary: #E0E7F5;
 */
 /*YEAR 8 Colours*/
 /*
 @scheme-color: #741371;
-@scheme-color-secondary:# E5DCE9;
-*/
+@scheme-color-secondary:#E5DCE9;
+*.
+
 /*YEAR 9 Colours*/
 /*
 @scheme-color: #D12229;
 @scheme-color-secondary: #F7E4DC;
 */
-/* AS Colours */
-/*!
- * "Fork me on GitHub" CSS ribbon v0.1.1 | MIT License
- * https://github.com/simonwhitaker/github-fork-ribbon-css
+/* GCSE Colours */
+/* 
+@scheme-color: #014225;
+@scheme-color-secondary: #cccccc;
+@scheme-font-colour: #FFFFFF;
+@scheme-font-visited-colour: #FFFFFF;
+@scheme-font-hover-colour: #DDDDDD;  
+@scheme-font-active-colour: #CCCCCC;
 */
-/* Left will inherit from right (so we don't need to duplicate code) */
-.github-fork-ribbon {
-  /* The right and left classes determine the side we attach our banner to */
-  position: absolute;
-  /* Add a bit of padding to give some substance outside the "stitching" */
-  padding: 2px 0;
-  /* Set the base colour */
+/* AS Colours */
+/*GitHub Ribbon*/
+.ribbon {
   background-color: #555555;
-  /* Set a gradient: transparent black at the top to almost-transparent black at the bottom */
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.15)));
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
-  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
-  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
-  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
-  /* Add a drop shadow */
-  -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
-  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
-  /* Set the font */
-  font: 700 13px "Helvetica Neue", Helvetica, Arial, sans-serif;
-  z-index: 9999;
-  pointer-events: auto;
-}
-.github-fork-ribbon a,
-.github-fork-ribbon a:hover {
-  /* Set the text properties */
-  color: #fff;
-  text-decoration: none;
-  text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
-  text-align: center;
-  /* Set the geometry. If you fiddle with these you'll also need
-     to tweak the top and right values in .github-fork-ribbon. */
-  width: 200px;
-  line-height: 20px;
-  /* Set the layout properties */
-  display: inline-block;
-  padding: 2px 0;
-  /* Add "stitching" effect */
-  border-width: 1px 0;
-  border-style: dotted;
-  border-color: #fff;
-  border-color: rgba(255, 255, 255, 0.7);
-}
-.github-fork-ribbon-wrapper {
-  width: 150px;
-  height: 150px;
-  position: absolute;
   overflow: hidden;
-  top: 0;
-  z-index: 9999;
-  pointer-events: none;
-}
-.github-fork-ribbon-wrapper.fixed {
-  position: fixed;
-}
-.github-fork-ribbon-wrapper.left {
-  left: 0;
-}
-.github-fork-ribbon-wrapper.right {
-  right: 0;
-}
-.github-fork-ribbon-wrapper.left-bottom {
-  position: fixed;
-  top: inherit;
-  bottom: 0;
-  left: 0;
-}
-.github-fork-ribbon-wrapper.right-bottom {
-  position: fixed;
-  top: inherit;
-  bottom: 0;
-  right: 0;
-}
-.github-fork-ribbon-wrapper.right .github-fork-ribbon {
-  top: 42px;
-  right: -43px;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-.github-fork-ribbon-wrapper.left .github-fork-ribbon {
-  top: 42px;
-  left: -43px;
+  white-space: nowrap;
+  position: absolute;
+  left: -50px;
+  top: 40px;
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-.github-fork-ribbon-wrapper.left-bottom .github-fork-ribbon {
-  top: 80px;
-  left: -43px;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-.github-fork-ribbon-wrapper.right-bottom .github-fork-ribbon {
-  top: 80px;
-  right: -43px;
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+.ribbon a {
+  border: 1px solid #faa;
+  color: #fff;
+  display: block;
+  font: bold 81.25% 'Ubuntu', Helvetica, Arial, sans-serif;
+  margin: 1px 0;
+  padding: 10px 50px;
+  text-align: center;
+  text-decoration: none;
 }
 /*Main Styles*/
 * {
-  margin: 0px padding: 0px;
+  margin: 0px;
+  padding: 0px;
   font: Arial, Helvetica, sans-serif;
 }
 html {
@@ -152,9 +69,9 @@ body {
   margin: 20px auto;
   clear: both;
 }
-code {
+p code {
   border-radius: 4px 4px 4px 4px;
-  background: #cccccc;
+  background: #B9E5FA;
   padding: 2px 5px;
   -webkit-hyphens: none;
   -moz-hyphens: none;
@@ -174,7 +91,7 @@ pre {
   font-weight: 400;
   line-height: 1.5;
   clear: both;
-  background: #cccccc;
+  background: #eee;
   padding: 20px;
   -webkit-hyphens: none;
   -moz-hyphens: none;
@@ -237,6 +154,12 @@ pre {
 .link-heading a:link {
   color: #ffffff;
 }
+.link-heading a:visited {
+  color: #FFFFFF;
+}
+.link-heading a:hover {
+  color: #cccccc;
+}
 h1 {
   font-size: 50px;
   color: #555555;
@@ -251,22 +174,39 @@ h1 {
   padding: 10px 10px;
   border-radius: 5px;
 }
+/* BrownSoft Software Engineering Co. REPAIR */
+/* visited link */
+.activity h2 a:visited {
+  color: #ffffff;
+}
+.activity h2 a:link {
+  color: #ffffff;
+}
+/* mouse over link */
+.activity h2 a:hover {
+  color: #dddddd;
+}
+/* selected link */
+.activity h2 a:active {
+  color: #cccccc;
+}
+/* BrownSoft Out. Invoice attached.------------ */
 .activity img,
-video {
+video,
+object {
   padding: 5px;
   border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
   display: block;
-  max-width: 600px;
+  max-width: 1000px;
 }
-.activity iframe,
-object {
+.activity iframe {
   padding: 5px;
   margin-left: auto;
   margin-right: auto;
   display: block;
-  max-width: 1000px;
+  max-width: 600px;
 }
 /* CSS for sub activities*/
 .learn h3 {
@@ -367,8 +307,8 @@ ul {
   line-height: 24px;
 }
 blockquote {
-  text-align: center;
-  font-family: Georgia,serif;
+  text-align: left;
+  font-family: Georgia, serif;
   font-size: 18px;
   font-style: italic;
   width: 600px;
@@ -387,15 +327,6 @@ blockquote:before {
   top: -20px;
   color: #7a7a7a;
 }
-blockquote:after {
-  display: block;
-  content: "\201D";
-  font-size: 80px;
-  position: absolute;
-  right: -20px;
-  bottom: -60px;
-  color: #7a7a7a;
-}
 blockquote cite {
   color: #999999;
   font-size: 14px;
@@ -407,20 +338,20 @@ blockquote cite:before {
 }
 /*TABLES GRRR*/
 table {
-  border: 1px solid #555555;
+  border: 2px solid #555555;
   border-collapse: collapse;
-  width: 100%;
+  width: 800px;
   text-align: center;
 }
 table th {
   background: #cccccc;
-  border: 1px solid #555555;
+  border: 2px solid #555555;
   color: #555555;
+  height: 40px;
+  vertical-align: middle;
 }
 table td {
-  border: 1px solid #555555;
-}
-/*Maths*/
-math {
-  font-size: 200%;
+  border: 2px solid #555555;
+  text-align: center;
+  padding: 1px;
 }
