@@ -12,75 +12,78 @@
 #+OPTIONS: toc:nil f:nil author:nil num:nil creator:nil timestamp:nil 
 
 #+BEGIN_HTML
-<div class=ribbon>
+<div class="github-fork-ribbon-wrapper left">
+<div class="github-fork-ribbon">
 <a href="https://github.com/stsb11/as_theory">Fork me on GitHub</a>
+</div>
 </div>
 <center>
 <br>
 <img src=img/etch_tank.jpg width=25%>
 </center>
 #+END_HTML
+
 * [[file:1.html][Lesson 01 - Mathematics]]
 :PROPERTIES:
-:HTML_CONTAINER_CLASS: activity
+:HTML_CONTAINER_CLASS: link-heading
 :END:
 * [[file:2.html][Lesson 02 - Input Transducers]]
 :PROPERTIES:
-:HTML_CONTAINER_CLASS: activity
+:HTML_CONTAINER_CLASS: link-heading
 :END:
 * [[file:3.html][Lesson 03 - Electrical Materials]]
 :PROPERTIES:
-:HTML_CONTAINER_CLASS: activity
+:HTML_CONTAINER_CLASS: link-heading
 :END:
 * [[./4.html][Lesson 04 - Logic]]
 :PROPERTIES:
-:HTML_CONTAINER_CLASS: activity
+:HTML_CONTAINER_CLASS: link-heading
 :END:
 * [[file:5.html][Lesson 05 - Advanced Electronics]]
 :PROPERTIES:
-:HTML_CONTAINER_CLASS: activity
+:HTML_CONTAINER_CLASS: link-heading
 :END:
 * [[./6.html][Lesson 06 - Resistant Materials]]
 :PROPERTIES:
-:HTML_CONTAINER_CLASS: activity
+:HTML_CONTAINER_CLASS: link-heading
 :END:
 * [[./7.html][Lesson 07 - Development of Design]]
 :PROPERTIES:
-:HTML_CONTAINER_CLASS: activity
+:HTML_CONTAINER_CLASS: link-heading
 :END:
 * [[./8.html][Lesson 08 - Programming and Communication]]
 :PROPERTIES:
-:HTML_CONTAINER_CLASS: activity
+:HTML_CONTAINER_CLASS: link-heading
 :END:
 * [[./9.html][Lesson 09 - Design in the Human Context]]
 :PROPERTIES:
-:HTML_CONTAINER_CLASS: activity
+:HTML_CONTAINER_CLASS: link-heading
 :END:
 * [[./10.html][Lesson 10 - Industrial Processes]]
 :PROPERTIES:
-:HTML_CONTAINER_CLASS: activity
+:HTML_CONTAINER_CLASS: link-heading
 :END:
 * [[./11.html][Lesson 11 - Systems & Control]]
 :PROPERTIES:
-:HTML_CONTAINER_CLASS: activity
+:HTML_CONTAINER_CLASS: link-heading
 :END:
 * [[./12.html][Lesson 12 - Information Technology]]
 :PROPERTIES:
-:HTML_CONTAINER_CLASS: activity
+:HTML_CONTAINER_CLASS: link-heading
 :END:
 * [[./13.html][Lesson 13 - Design Questions]]
 :PROPERTIES:
-:HTML_CONTAINER_CLASS: activity
+:HTML_CONTAINER_CLASS: link-heading
 :END:
 * [[./14.html][Exam Theory topic list]]
 :PROPERTIES:
-:HTML_CONTAINER_CLASS: activity
+:HTML_CONTAINER_CLASS: link-heading
 :END:
-* [[http://www.aqa.org.uk/subjects/design-and-technology/gcse/design-and-technology-systems-and-control-technology-4565/past-papers-and-mark-schemes][AQA Past Exam papers]]
+* [[http://www.aqa.org.uk/subjects/design-and-technology/a-level/design-and-technology-systems-2555/past-papers-and-mark-schemes][AQA Past Exam papers]]
 :PROPERTIES:
-:HTML_CONTAINER_CLASS: activity
+:HTML_CONTAINER_CLASS: link-heading
 :END:
 * [[./examples.html][Model Past Paper solutions]]
 :PROPERTIES:
-:HTML_CONTAINER_CLASS: activity
+:HTML_CONTAINER_CLASS: link-heading
 :END:
