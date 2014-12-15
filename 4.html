@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Logic Gates</title>
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Logic Gates</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. Introduction</a></li>
+<li><a href="#sec-2">2. Recap</a>
+<ul>
+<li><a href="#sec-2-1">Example Question</a></li>
+<li><a href="#sec-2-2">Past Paper Questions</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="github-fork-ribbon-wrapper left">
+<div class="github-fork-ribbon">
+<a href="https://github.com/stsb11/as_theory">Fork me on GitHub</a>
+</div>
+</div>
+<center>
+<img src='./img/and.png' width=50%>
+</center>
+
+<div id="outline-container-sec-1" class="outline-2 activity">
+<h2 id="sec-1"><span class="section-number-2">1</span> Introduction</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>Whether programming a PIC chip or designing a circuit to use components, a good understanding of the basic logic gates will make your work easier. Electronic circuits, computers, games consoles and mobile ‘phones all use logic gates for their decision making processes. 
+</li>
+<li>Logic gates typically operate using wither one or two inputs, which are either off (usually referred to as being “logic low” or 0), or on (referred to as being “high” or 1). 
+</li>
+<li>In electronics, 5v usually indicates a logical high, and 0V for a logic low state. 
+</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>The <b>AND</b> gate only gives a logic high when both its inputs are high. i.e. Input 1 AND input 2 both need to be high. 
+</li>
+</ul>
+<center>
+<object data="js/AND.html" width='200px' height='100px'></object>
+</center>
+<ul class="org-ul">
+<li>Some questions ask you to draw a truth table. This is a table which shows all the possible permutations of the inputs. A and B are used to denote inputs, and Q is the output value. In the first row here, we can see that when both the inputs are turned off (are low), the output is also low. The truth table for the AND gate is:
+</li>
+</ul>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="center" />
+
+<col  class="center" />
+
+<col  class="center" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="center">A</th>
+<th scope="col" class="center">B</th>
+<th scope="col" class="center">Q</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="center">0</td>
+<td class="center">0</td>
+<td class="center">0</td>
+</tr>
+
+<tr>
+<td class="center">0</td>
+<td class="center">1</td>
+<td class="center">0</td>
+</tr>
+
+<tr>
+<td class="center">1</td>
+<td class="center">0</td>
+<td class="center">0</td>
+</tr>
+
+<tr>
+<td class="center">1</td>
+<td class="center">1</td>
+<td class="center">1</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>The <b>OR</b> gate gives a logic high when either (or both) of its inputs are high. i.e. Input 1 OR input 2 OR both are high. 
+</li>
+</ul>
+<center>
+<object data="js/OR.html" width='200px' height='100px'></object>
+</center>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="center" />
+
+<col  class="center" />
+
+<col  class="center" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="center">A</th>
+<th scope="col" class="center">B</th>
+<th scope="col" class="center">Q</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="center">0</td>
+<td class="center">0</td>
+<td class="center">0</td>
+</tr>
+
+<tr>
+<td class="center">0</td>
+<td class="center">1</td>
+<td class="center">1</td>
+</tr>
+
+<tr>
+<td class="center">1</td>
+<td class="center">0</td>
+<td class="center">1</td>
+</tr>
+
+<tr>
+<td class="center">1</td>
+<td class="center">1</td>
+<td class="center">1</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>The <b>NOT</b> gate is unique in having only one input. Sometimes called the invertor gate, it inverts whatever input is sent into it. 
+</li>
+</ul>
+<center>
+<object data="js/NOT.html" width='200px' height='100px'></object>
+</center>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="center" />
+
+<col  class="center" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="center">A</th>
+<th scope="col" class="center">Q</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="center">0</td>
+<td class="center">1</td>
+</tr>
+
+<tr>
+<td class="center">1</td>
+<td class="center">0</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>The <b>NAND</b> gate is an AND gate, but with a NOT gate connected to its output. This is the building block of all modern computers, as all other gates can be built from combining NANDs together, and a single NAND gate can be made from two NPN transistors. 
+</li>
+</ul>
+<center>
+<object data="js/NAND.html" width='200px' height='100px'></object>
+</center>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="center" />
+
+<col  class="center" />
+
+<col  class="center" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="center">A</th>
+<th scope="col" class="center">B</th>
+<th scope="col" class="center">Q</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="center">0</td>
+<td class="center">0</td>
+<td class="center">1</td>
+</tr>
+
+<tr>
+<td class="center">0</td>
+<td class="center">1</td>
+<td class="center">1</td>
+</tr>
+
+<tr>
+<td class="center">1</td>
+<td class="center">0</td>
+<td class="center">1</td>
+</tr>
+
+<tr>
+<td class="center">1</td>
+<td class="center">1</td>
+<td class="center">0</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>The <b>NOR</b> gate is an OR gate, but with a NOT gate connected to its output. It only gives a logic high when both inputs are turned off. 
+</li>
+</ul>
+<center>
+<object data="js/NOR.html" width='200px' height='100px'></object>
+</center>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="center" />
+
+<col  class="center" />
+
+<col  class="center" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="center">A</th>
+<th scope="col" class="center">B</th>
+<th scope="col" class="center">Q</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="center">0</td>
+<td class="center">0</td>
+<td class="center">1</td>
+</tr>
+
+<tr>
+<td class="center">0</td>
+<td class="center">1</td>
+<td class="center">0</td>
+</tr>
+
+<tr>
+<td class="center">1</td>
+<td class="center">0</td>
+<td class="center">0</td>
+</tr>
+
+<tr>
+<td class="center">1</td>
+<td class="center">1</td>
+<td class="center">0</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>The <b>XOR</b> (Exclusive OR) gate is an OR gate, but with one important difference. The output only goes high if one input, or the other (but not both) is on. A normal OR gate, by comparison, will also go high if both inputs are turned on.
+</li>
+</ul>
+<center>
+<object data="js/XOR.html" width='200px' height='100px'></object>
+</center>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="center" />
+
+<col  class="center" />
+
+<col  class="center" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="center">A</th>
+<th scope="col" class="center">B</th>
+<th scope="col" class="center">Q</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="center">0</td>
+<td class="center">0</td>
+<td class="center">0</td>
+</tr>
+
+<tr>
+<td class="center">0</td>
+<td class="center">1</td>
+<td class="center">1</td>
+</tr>
+
+<tr>
+<td class="center">1</td>
+<td class="center">0</td>
+<td class="center">1</td>
+</tr>
+
+<tr>
+<td class="center">1</td>
+<td class="center">1</td>
+<td class="center">0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-sec-2" class="outline-2 activity">
+<h2 id="sec-2"><span class="section-number-2">2</span> Recap</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-sec-2-1" class="outline-3 try">
+<h3 id="sec-2-1">Example Question</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li><b>June 2012, Q4.</b> Complete the logic network so that it will function as shown in the truth table below. (6 marks)
+</li>
+</ul>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="center" />
+
+<col  class="center" />
+
+<col  class="center" />
+
+<col  class="center" />
+</colgroup>
+<tbody>
+<tr>
+<td class="center">A</td>
+<td class="center">B</td>
+<td class="center">C</td>
+<td class="center">Q</td>
+</tr>
+
+<tr>
+<td class="center">0</td>
+<td class="center">0</td>
+<td class="center">0</td>
+<td class="center">0</td>
+</tr>
+
+<tr>
+<td class="center">0</td>
+<td class="center">0</td>
+<td class="center">1</td>
+<td class="center">0</td>
+</tr>
+
+<tr>
+<td class="center">0</td>
+<td class="center">1</td>
+<td class="center">0</td>
+<td class="center">1</td>
+</tr>
+
+<tr>
+<td class="center">0</td>
+<td class="center">1</td>
+<td class="center">1</td>
+<td class="center">0</td>
+</tr>
+
+<tr>
+<td class="center">1</td>
+<td class="center">0</td>
+<td class="center">0</td>
+<td class="center">1</td>
+</tr>
+
+<tr>
+<td class="center">1</td>
+<td class="center">0</td>
+<td class="center">1</td>
+<td class="center">0</td>
+</tr>
+
+<tr>
+<td class="center">1</td>
+<td class="center">1</td>
+<td class="center">0</td>
+<td class="center">1</td>
+</tr>
+
+<tr>
+<td class="center">1</td>
+<td class="center">1</td>
+<td class="center">1</td>
+<td class="center">0</td>
+</tr>
+</tbody>
+</table>
+
+
+<div class="figure">
+<p><img src="./img/2012_q4.png" alt="2012_q4.png" />
+</p>
+</div>
+
+<ul class="org-ul">
+<li>The first thing to I do is look at how many logic gates the solution will probably involve. Given that in this question, the three inputs turn into a single output, I’d guess that two of the inputs will be connected together through a gate (based on how the A, B and C are drawn on the question paper, it’ll either be A and B, or B and C connected together). This stage will leave me with two outputs, which will need feeding into a final gate to give one output. Something a bit like this…
+</li>
+</ul>
+
+
+<div class="figure">
+<p><img src="./img/2012_q4i.png" alt="2012_q4i.png" />
+</p>
+</div>
+
+<ul class="org-ul">
+<li>(…or it might be the same idea, but with the arrow from B going into C instead)
+</li>
+</ul>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="center" />
+
+<col  class="center" />
+
+<col  class="center" />
+
+<col  class="center" />
+</colgroup>
+<tbody>
+<tr>
+<td class="center">A</td>
+<td class="center">B</td>
+<td class="center">C</td>
+<td class="center">Q</td>
+</tr>
+
+<tr>
+<td class="center">0</td>
+<td class="center">0</td>
+<td class="center">0</td>
+<td class="center">0</td>
+</tr>
+
+<tr>
+<td class="center">0</td>
+<td class="center">0</td>
+<td class="center">1</td>
+<td class="center">0</td>
+</tr>
+
+<tr>
+<td class="center"><b>0</b></td>
+<td class="center"><b>1</b></td>
+<td class="center"><b>0</b></td>
+<td class="center"><b>1</b></td>
+</tr>
+
+<tr>
+<td class="center">0</td>
+<td class="center">1</td>
+<td class="center">1</td>
+<td class="center">0</td>
+</tr>
+
+<tr>
+<td class="center"><b>1</b></td>
+<td class="center"><b>0</b></td>
+<td class="center"><b>0</b></td>
+<td class="center"><b>1</b></td>
+</tr>
+
+<tr>
+<td class="center">1</td>
+<td class="center">0</td>
+<td class="center">1</td>
+<td class="center">0</td>
+</tr>
+
+<tr>
+<td class="center"><b>1</b></td>
+<td class="center"><b>1</b></td>
+<td class="center"><b>0</b></td>
+<td class="center"><b>1</b></td>
+</tr>
+
+<tr>
+<td class="center">1</td>
+<td class="center">1</td>
+<td class="center">1</td>
+<td class="center">0</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>We now need to think about what causes a logical high to be obtained. When I look at the grid (left), it seems that the only time Q gets to be high is when output C is low. That can’t be a coincidence. Given that we’ve got a scenario where a low is causing a high, this gets me thinking that gate 2 is probably a NOT gate (to turn lows into highs). I’m also thinking that gate 3 is probably an AND gate, as I need both the output from C to be high AND the result of whatever gate is between A-B to be high in order to get an overall high at the end. I suggest you re-read that slowly, one step at a time until you’re happy with it! 
+</li>
+
+<li>If I’m right in my guess, then gate 1 must be an OR gate, as its outputs result in Q going high when either A or B are high (or both of them at the same time). Let’s check this is the answer by drawing out the logic network in full, and completing the truth table…
+</li>
+</ul>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="center" />
+
+<col  class="center" />
+
+<col  class="center" />
+
+<col  class="center" />
+
+<col  class="center" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="center">A</th>
+<th scope="col" class="center">B</th>
+<th scope="col" class="center">C</th>
+<th scope="col" class="center">Q</th>
+<th scope="col" class="center">Check</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="center">0</td>
+<td class="center">0</td>
+<td class="center">0</td>
+<td class="center">0</td>
+<td class="center">0</td>
+</tr>
+
+<tr>
+<td class="center">0</td>
+<td class="center">0</td>
+<td class="center">1</td>
+<td class="center">0</td>
+<td class="center">0</td>
+</tr>
+
+<tr>
+<td class="center">0</td>
+<td class="center">1</td>
+<td class="center">0</td>
+<td class="center">1</td>
+<td class="center">1</td>
+</tr>
+
+<tr>
+<td class="center">0</td>
+<td class="center">1</td>
+<td class="center">1</td>
+<td class="center">0</td>
+<td class="center">0</td>
+</tr>
+
+<tr>
+<td class="center">1</td>
+<td class="center">0</td>
+<td class="center">0</td>
+<td class="center">1</td>
+<td class="center">1</td>
+</tr>
+
+<tr>
+<td class="center">1</td>
+<td class="center">0</td>
+<td class="center">1</td>
+<td class="center">0</td>
+<td class="center">0</td>
+</tr>
+
+<tr>
+<td class="center">1</td>
+<td class="center">1</td>
+<td class="center">0</td>
+<td class="center">1</td>
+<td class="center">1</td>
+</tr>
+
+<tr>
+<td class="center">1</td>
+<td class="center">1</td>
+<td class="center">1</td>
+<td class="center">0</td>
+<td class="center">0</td>
+</tr>
+
+<tr>
+<td class="center">1</td>
+<td class="center">1</td>
+<td class="center">1</td>
+<td class="center">1</td>
+<td class="center">0</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li>As the Q and check columns add up, we know we have the correct answer.
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-2-2" class="outline-3 try">
+<h3 id="sec-2-2">Past Paper Questions</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li></li>
+</ul>
+
+<p>
+<a href="index.html">Return to homepage</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="validation"></p>
+</div>
+</body>
+</html>
