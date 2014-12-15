@@ -240,6 +240,9 @@ In a car, a circuit is needed to ensure that the airbags only deploy when there 
 - We now need to think about what causes a logical high to be obtained. When I look at the grid (left), it seems that the only time Q gets to be high is when output C is low. That can’t be a coincidence. Given that we’ve got a scenario where a low is causing a high, this gets me thinking that gate 2 is probably a NOT gate (to turn lows into highs). I’m also thinking that gate 3 is probably an AND gate, as I need both the output from C to be high AND the result of whatever gate is between A-B to be high in order to get an overall high at the end. I suggest you re-read that slowly, one step at a time until you’re happy with it! 
 
 - If I’m right in my guess, then gate 1 must be an OR gate, as its outputs result in Q going high when either A or B are high (or both of them at the same time). Let’s check this is the answer by drawing out the logic network in full, and completing the truth table…
+
+[[./img/2012_q4ii.png]]
+
 | <c> | <c> | <c> | <c> | <c>   |
 | A   | B   | C   | Q   | Check |
 |-----+-----+-----+-----+-------|
@@ -255,10 +258,41 @@ In a car, a circuit is needed to ensure that the airbags only deploy when there 
 
 - As the Q and check columns add up, we know we have the correct answer.
 
+
+- You try: Complete the truth table for the logic circuit below. /(5 marks)/
+
+[[./img/sample.png]]
+
+| <c> | <c> | <c> | <c> |
+| A   | B   | C   | Q   |
+|-----+-----+-----+-----|
+| 0   | 0   | 0   |     |
+| 0   | 0   | 1   |     |
+| 0   | 1   |     |     |
+| 0   | 1   |     |     |
+| 1   |     |     |     |
+| 1   |     |     |     |
+| 1   |     |     |     |
+| 1   |     |     |     |
+
 ** Past Paper Questions
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: try
 :END:
-- 
+- *Specimen Paper, Q5.* A hot drinks vending machine has a water tank containing a water level sensor that gives a HIGH output if there is water in the tank. The machine has two buttons, one for coffee and one for tea, both giving a HIGH output when pressed. The machine’s control system should send a HIGH output to a valve if there is water in the tank and one of the two buttons are pressed, but not if both buttons are pressed at the same time.
+
+    - (a) Draw a truth table for the above system. 	/(4 marks)/
+    - (b) Design a logic diagram for this control system.  /(8 marks)/
+    - (c) During the development of this control system the designer could test the operation of the circuit by either prototyping using real components or by simulating the operation of the system using a computer software package. Compare and contrast these two methods of testing logic systems. /(2x 4 marks)/
+
+- *June 2011, Q4(a).* Complete the truth table for the circuit shown below. /(5 marks)/
+
+[[./img/2011_q4.png]]
+| <c>   | <c> | <c> | <c> |
+|-------+-----+-----+-----|
+| A     | B   | C   | Q   |
+| 0     | 0   | 0   |     |
+| 0     | 0   | 1   |     |
+| /etc/ |     |     |     |
 
 [[file:index.html][Return to homepage]]
