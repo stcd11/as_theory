@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Advanced Electronics</title>
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/javascript" src="http://orgmode.org/mathjax/MathJax.js"></script>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+    MathJax.Hub.Config({
+        // Only one of the two following lines, depending on user settings
+        // First allows browser-native MathML display, second forces HTML/CSS
+        //  config: ["MMLorHTML.js"], jax: ["input/TeX"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
+                     "TeX/noUndefined.js"],
+        tex2jax: {
+            inlineMath: [ ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"], ["\\begin{displaymath}","\\end{displaymath}"] ],
+            skipTags: ["script","noscript","style","textarea","pre","code"],
+            ignoreClass: "tex2jax_ignore",
+            processEscapes: false,
+            processEnvironments: true,
+            preview: "TeX"
+        },
+        showProcessingMessages: true,
+        displayAlign: "center",
+        displayIndent: "2em",
+
+        "HTML-CSS": {
+             scale: 100,
+             availableFonts: ["STIX","TeX"],
+             preferredFont: "TeX",
+             webFont: "TeX",
+             imageFont: "TeX",
+             showMathMenu: true,
+        },
+        MMLorHTML: {
+             prefer: {
+                 MSIE:    "MML",
+                 Firefox: "MML",
+                 Opera:   "HTML",
+                 other:   "HTML"
+             }
+        }
+    });
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Advanced Electronics</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. Introduction</a>
+<ul>
+<li><a href="#sec-1-1">Timers</a></li>
+<li><a href="#sec-1-2">Counters</a></li>
+<li><a href="#sec-1-3">Decoders</a></li>
+<li><a href="#sec-1-4">Latches</a></li>
+<li><a href="#sec-1-5">Amplifiers</a></li>
+<li><a href="#sec-1-6">Comparators</a></li>
+</ul>
+</li>
+<li><a href="#sec-2">2. Recap</a>
+<ul>
+<li><a href="#sec-2-1">Past Paper Questions</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="github-fork-ribbon-wrapper left">
+<div class="github-fork-ribbon">
+<a href="https://github.com/stsb11/as_theory">Fork me on GitHub</a>
+</div>
+</div>
+<center>
+<img src='./img/555.jpg' width=50%>
+</center>
+
+<div id="outline-container-sec-1" class="outline-2 activity">
+<h2 id="sec-1"><span class="section-number-2">1</span> Introduction</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>As you will come to realize as you work through this section, PIC chips are one answer to most (but not all) of the different concepts you need to be able to provide different solutions to for the exam. 
+</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>The main categories you will need to be able to have an awareness of are:
+<ul class="org-ul">
+<li>Timers
+</li>
+<li>Counters
+</li>
+<li>Decoders
+</li>
+<li>Latches
+</li>
+<li>Amplifiers
+</li>
+<li>Comparators
+</li>
+<li>Output Transducers
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+<div id="outline-container-sec-1-1" class="outline-3 learn">
+<h3 id="sec-1-1">Timers</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li>Many different problems require a circuit to have the ability to use time in order to achieve an outcome. A door lock might need to be held open for several seconds before re-locking, or a tone may need to be produced at a certain pitch by outputting a frequency through a speaker. You need to know two different ways of achieving each of the following. 
+</li>
+
+<li>A single (monostable) output pulse of a set duration. 
+<ol class="org-ol">
+<li>This can be achieved either by using a PIC chip, and writing code to turn the output in question on, pause for the desired time and then turn off again. This is a really simple solution to implement using a single PIC, but it’s worth remembering that a “basic” model of PIC can cost about 75p.
+</li>
+<li>A 555 timer set up as a monostable will allow a precise timed pulse of up days in length if desired. They’re also very cheap (≅15p each), although require the resistor and capacitor values to be calculated, and will then need tuning (<i>as capacitors can be ±20% accurate</i>).
+</li>
+</ol>
+</li>
+
+<li>A string of output pulses (astable) with a set mark/space ratio. The “mark time” is the length of time the output is high, and the “space time” is the amount of time that the output is low. One can calculate the mark/space ratio with: <b>Mark/space ratio = time high / time low</b>
+<ol class="org-ol">
+<li>A PIC chip could be used to produce this effect.
+</li>
+<li>Alternatively, a 555 timer circuit (set up as an astable) will allow you to clock speeds of up to 300kHz, and are very cost effective. 
+</li>
+</ol>
+</li>
+<li>There are examples of both types of 555 circuit, along with the calculations to set them up as desired in the <b>\resources\Circuit Ideas\</b> section of the Systems &amp; Control folder in the open drive.
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-1-2" class="outline-3 learn">
+<h3 id="sec-1-2">Counters</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li>It is often desirable in a circuit to be able to count. This could be so that a series of different LEDs can flash in a pattern to make an attractive visual output, or to trigger an output after a particular input has been triggered a set number of times. 
+</li>
+
+<li>Methods of counting input pulses to produce a decade output.
+<ol class="org-ol">
+<li>A PIC chip has several variables which can store values well over ten, so could count up, and produce outputs as desired at each value. The advantage of using a PIC here is the added flexibility to perform different tasks at each counted value.
+</li>
+<li>A 4017b decade counter (also known as a divide-by-10 counter) is an IC which has 10 outputs, and a trigger pin. Each time a pulse is sent to the trigger, the next output in the series is turned on. When combined with a 555 timer and a number of LEDs, this can be used to provide an automated light-show. 
+</li>
+<li>A 4026b is a decade counter that is designed to be connected straight to a 7-segment display. These can be strung together to produce multi-digit numbers.
+</li>
+</ol>
+</li>
+<li>Methods of counting input pulses to produce a binary output. If you've never encountered binary before, read our guide to binary <a href="https://www.bournetocode.com/projects/8-CS-Computers/pages/1_Lesson.html">here</a>.
+<ol class="org-ol">
+<li>A PIC chip can detect input pulses, and are represented as a binary output within the chip itself. Through writing code, the value can be expressed in any way desired… LEDs showing binary, a 7-segment output, a series of beeps through a speaker, etc.
+</li>
+<li>A 4520 binary decade counter enables binary counting. The picture below shows a simple setup, where the number 3 is being shown (1 + 2)
+</li>
+</ol>
+</li>
+</ul>
+
+<div class="figure">
+<p><img src="./img/4520.png" alt="4520.png" /> 
+</p>
+</div>
+
+<ul class="org-ul">
+<li>Methods of counting input pulses to produce the correct coding to operate a 7-segment display.
+<ol class="org-ol">
+<li>A PIC with at least 7 outputs can be programmed to display any choice of value (look up the pin-out on the web to see which pin maps to segments a-g).
+</li>
+<li>A 4511 IC will take a 4-bit binary input, and convert it to the equivalent output for a 7-segment display. 
+</li>
+<li>A 4026 counter and 7-seg decoder IC will take pulses, and count up each time, showing the result on a 7-segment display. This saves you having to waste outputs on a costly PIC, as well as simplifying your PCB design. 
+</li>
+</ol>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1-3" class="outline-3 learn">
+<h3 id="sec-1-3">Decoders</h3>
+<div class="outline-text-3" id="text-1-3">
+<ul class="org-ul">
+<li>You need to know a method of decoding a 4 bit binary input to:
+<ol class="org-ol">
+<li>Drive a 7 segment display. A PIC chip with 4 inputs could be used to pick up the inputs, then encode them through either single output connected to a 4511 (discussed above), or through 7 PIC outputs, straight into a 7-segment display.
+</li>
+<li>Produce a decade output. A PIC chip with 10 outputs (e.g. E28) would be a simple (but very costly) solution. Alternatively, a smaller PIC with 4 inputs and a single output could be combined with a decade counter, and then code be used to create the output, based on the binary value going in.
+</li>
+</ol>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1-4" class="outline-3 learn">
+<h3 id="sec-1-4">Latches</h3>
+<div class="outline-text-3" id="text-1-4">
+<ul class="org-ul">
+<li>Two alternative methods of setting and latching the state of an output for a specific input.
+</li>
+<li>A thyristor is a component which “latches” fully open (i.e. allows current to flow from the anode to the cathode) when it receives at least 2v through its gate pin, and stays open even when power is removed from the gate. This is especially handy for alarm circuits, where it is desirable to have an alarm sound continuously when an input is triggered. By using a potential divider, one can adjust the sensitivity of the latch. 
+</li>
+<li>A PIC chip can be programmed to turn on a specific output when an input signal is received, and to stay on indefinitely. 
+</li>
+<li>A 555 timer can be set up in “bistable” mode, which will also act as a latching switch. This isn't part of the A level curriculum, but it's a nice little factoid to know about!
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1-5" class="outline-3 learn">
+<h3 id="sec-1-5">Amplifiers</h3>
+<div class="outline-text-3" id="text-1-5">
+<ul class="org-ul">
+<li>Amplifying Current&#x2026;
+<ol class="org-ol">
+<li>An NPN transistor, when the load is connected to the emitter pin will act as a current amplifier, multiplying the output current by the hFE of the transistor (this varies from model to model).
+</li>
+<li>An operational amplifier can act as a current amplifier, producing thousands of times more than the incoming current. 
+</li>
+</ol>
+</li>
+<li>Amplifying Voltage&#x2026;
+<ol class="org-ol">
+<li>An NPN transistor, when the load is connected through the desired voltage rail and the collector will act as a voltage amplifier. 
+</li>
+<li>Op-Amps can also be used to boost small input signals. Examples can be seen <a href="http://www.societyofrobots.com/schematics_voltamp.shtml">here</a>.
+</li>
+</ol>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1-6" class="outline-3 learn">
+<h3 id="sec-1-6">Comparators</h3>
+<div class="outline-text-3" id="text-1-6">
+<ul class="org-ul">
+<li>Comparing different input voltages: PIC chips normally have both digital and analogue inputs, which will allow different input voltages to be read, and converted into a integer (0-255 on an 8-bit Genie PIC), and then processed as desired in code. 
+</li>
+<li>Digital inputs. PIC chips have multiple digital inputs that can be used to detect input signals from PTM switches, big changes in LDRs, etc.  
+</li>
+<li>Output Transducers. Ensure that you can identify at least one electronic output transducer for each of the following:
+<ul class="org-ul">
+<li>Linear motion. Solenoid.
+</li>
+<li>Rotary motion. DC motor or stepper motor.
+</li>
+<li>Precise angular movement. Servo motor.
+</li>
+<li>Heat. Heating element.
+</li>
+<li>Light. LED or bulb.
+</li>
+<li>Sound. Piezo transducer or speaker.
+</li>
+<li>Amplification. NPN transistor or Operational Amplifier.
+</li>
+<li>Magnetism. Electromagnet (copper wire wound around an iron core), or a relay (which contains a small electromagnet).
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-2" class="outline-2 activity">
+<h2 id="sec-2"><span class="section-number-2">2</span> Recap</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-sec-2-1" class="outline-3 try">
+<h3 id="sec-2-1">Past Paper Questions</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li><b>Specimen Paper, Q2.</b> An electronic method of producing a time delay is shown here.
+</li>
+</ul>
+
+<div class="figure">
+<p><img src="./img/spec_q2.png" alt="spec_q2.png" />
+</p>
+</div>
+<ul class="org-ul">
+<li>(a) Explain in detail at least four stages the operation of the circuit as the switch SW1 is connected to R1. <i>(4× 1 mark)</i>
+</li>
+<li>(b) Give two methods of increasing the time delay of the circuit. <i>(2 marks)</i>
+</li>
+</ul>
+
+
+<ul class="org-ul">
+<li><b>June 2009, Q7.</b> (a) Describe in detail one method of producing a Printed Circuit Board (PCB). <i>(8 marks)</i>
+</li>
+<li>(b) Identify two health and safety risks when producing and soldering components onto printed circuit boards and state how these risks may be reduced. <i>(4 marks)</i>
+</li>
+<li>(c) Electronic circuits can be prototyped using breadboard or by modelling on a computer simulation package. Compare these two methods of prototyping electronic circuits. <i>(8 marks)</i>
+</li>
+</ul>
+
+
+<ul class="org-ul">
+<li><b>June 2011, Q5.</b> (a) Using a diagram, describe two different systems for producing a time delay suitable for switching on a 240 volt ac lamp for 10 minutes when a switch is momentarily pushed. <i>(16 marks)</i>
+</li>
+<li>(b) Choose one of your systems given in part (a). Explain how it would be possible to make the system adjustable so the time period could be any value between 2 and 30 minutes. <i>(4 marks)</i>
+</li>
+</ul>
+
+
+<ul class="org-ul">
+<li><b>June 2012, Q5 (a)</b> 5 (a) (i) With the aid of diagrams, describe two different systems for continuously flashing a normal LED. The LED should switch on for approximately 2 seconds then off for approximately 3 seconds. Your solutions should include any relevant calculations. <i>(16 marks)</i>
+</li>
+<li>(b) Choose one of your solutions from part 5(a). Explain how it would be possible to modify the system for switching on a 240volt ac lamp. <i>(4 marks)</i>
+</li>
+</ul>
+
+
+<ul class="org-ul">
+<li><b>June 2012, Q7.</b> (a) A system is required to automatically monitor and control the temperature in a room. With the aid of diagrams, show two systems that would produce an electrical output of at least 2 volts at 10mA when the temperature exceeds 25°C. <i>(8 Marks)</i>
+</li>
+</ul>
+
+<p>
+<a href="index.html">Return to homepage</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="validation"></p>
+</div>
+</body>
+</html>
