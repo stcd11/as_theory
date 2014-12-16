@@ -43,35 +43,39 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: link-heading
 :END:
-* [[./6.html][Lesson 06 - Resistant Materials]]
+* [[file:6.html][Lesson 06 - Mechanical Systems]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: link-heading
 :END:
-* [[./7.html][Lesson 07 - Development of Design]]
+* [[./7.html][Lesson 07 - Resistant Materials]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: link-heading
 :END:
-* [[./8.html][Lesson 08 - Programming and Communication]]
+* [[./8.html][Lesson 08 - Development of Design]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: link-heading
 :END:
-* [[./9.html][Lesson 09 - Design in the Human Context]]
+* [[./9.html][Lesson 09 - Programming and Communication]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: link-heading
 :END:
-* [[./10.html][Lesson 10 - Industrial Processes]]
+* [[./10.html][Lesson 10 - Design in the Human Context]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: link-heading
 :END:
-* [[./11.html][Lesson 11 - Systems & Control]]
+* [[./11.html][Lesson 11 - Industrial Processes]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: link-heading
 :END:
-* [[./12.html][Lesson 12 - Information Technology]]
+* [[./12.html][Lesson 12 - Systems & Control]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: link-heading
 :END:
-* [[./13.html][Lesson 13 - Design Questions]]
+* [[./13.html][Lesson 13 - Information Technology]]
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: link-heading
+:END:
+* [[./14.html][Lesson 14 - Design Questions]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: link-heading
 :END:
