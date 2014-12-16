@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Resistant Materials</title>
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Resistant Materials</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. Introduction</a>
+<ul>
+<li><a href="#sec-1-1">Metals</a></li>
+<li><a href="#sec-1-2">Plastics</a></li>
+<li><a href="#sec-1-3">Woods</a></li>
+<li><a href="#sec-1-4">Manmade Boards</a></li>
+<li><a href="#sec-1-5">Smart Materials</a></li>
+<li><a href="#sec-1-6">Comparative Testing</a></li>
+</ul>
+</li>
+<li><a href="#sec-2">2. Recap</a>
+<ul>
+<li><a href="#sec-2-1">Past Paper Questions</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="github-fork-ribbon-wrapper left">
+<div class="github-fork-ribbon">
+<a href="https://github.com/stsb11/as_theory">Fork me on GitHub</a>
+</div>
+</div>
+<center>
+<img src='./img/steel.jpg' width=40%>
+</center>
+
+<div id="outline-container-sec-1" class="outline-2 activity">
+<h2 id="sec-1"><span class="section-number-2">1</span> Introduction</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>A systems engineer needs to know something about all aspects of Technology in order to produce the best work. One aspect of this is knowing what’s available when selecting materials to fabricate products with. For both the exam and your coursework, you will require a general understanding of the following groupings of materials. We’ll look at metals, plastics, woods and smart materials.
+</li>
+</ul>
+</div>
+<div id="outline-container-sec-1-1" class="outline-3 learn">
+<h3 id="sec-1-1">Metals</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li><b>Ferrous</b> metals are those that contain <a href="http://en.wikipedia.org/wiki/Iron">iron</a>. Steel, for example. All ferrous metals will rust over time, due to their iron content. All metals change their properties, dependent on how they are heated and cooled.
+</li>
+<li><a href="http://en.wikipedia.org/wiki/Non-ferrous_metal"><b>Non-ferrous</b></a> metals are those which do not contain iron, such as brass.
+<ul class="org-ul">
+<li>A good conductor of electricity and heat, <a href="http://en.wikipedia.org/wiki/Aluminium">aluminum</a> is a light-weight metal, used in aircraft construction, for power cables, drinks cans and in cookware.  
+</li>
+<li><a href="http://en.wikipedia.org/wiki/Titanium">Titanium</a> is a very strong metal, used in making the strongest and lightest parts of modern fighter jet planes, as well as in high-performance sports equipment, medical implants and jewelry. It does not corrode, and has good resistance to sea water and chlorine.
+</li>
+</ul>
+</li>
+<li><a href="http://en.wikipedia.org/wiki/Alloy"><b>Alloys</b></a> are a mixture of two or more elements, one of which is a metal.  They have properties different to those of the metals they are composed of. A few common examples are:
+<ul class="org-ul">
+<li><a href="http://en.wikipedia.org/wiki/Brass">Brass</a>. Made since biblical times from copper and zinc, brass is used in low-friction applications (e.g. gears and locks), and has a golden colour. It is also used in musical instruments as it has pleasant acoustic properties. 
+</li>
+<li><a href="http://en.wikipedia.org/wiki/Bronze">Bronze</a>. Made from copper and tin, this was the first alloy to be discovered. Bronze is used when it is desirable for parts to be able to last a long time, and not be corroded by air or water. 
+</li>
+<li>Different <a href="http://en.wikipedia.org/wiki/Steel">steel</a>s are made by adding carbon to iron (0.02%-1.7% carbon). Steel is harder and stronger than iron alone; adding additional carbon results in harder and stronger steel, at the expense of it becoming increasingly brittle. It is used for car bodies, bridge construction, buildings and tools.  
+</li>
+<li>Stainless steel is made with the addition of around 11% chromium, which adds an increased resistance to staining and rusting compared to regular steel. It is used for surgical instruments, sinks and cutlery.
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-1-2" class="outline-3 learn">
+<h3 id="sec-1-2">Plastics</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li>Polymers (and the discovery of plastics) revolutionized the 20th century, giving rise to the mass production of strong, cheaply produced products for the masses. The environmental cost was only considered in the latter half of the 20th century, when the impact of oil-based products which took hundreds of years to break down in landfill sites started to be realized. 
+</li>
+<li>A <a href="http://en.wikipedia.org/wiki/Thermoplastic"><b>thermoplastic</b></a> is one that becomes soft when heated and hard when cooled. 
+</li>
+<li><a href="http://en.wikipedia.org/wiki/Acrylonitrile_butadiene_styrene">ABS</a> (Acrylonitrile butadiene styrene) is highly impact resistant and tough. Commonly used for musical instruments, golf clubs, car trim components, car bumpers, medical devices for blood access, protective headgear, whitewater canoes and Lego bricks.
+</li>
+<li><a href="http://en.wikipedia.org/wiki/Poly(methyl_methacrylate)">Acrylic</a> (Polymethyl methacrylate) is stiff, hard (but scratches easily), durable, brittle in small sections, a good electrical insulator, which machines and polishes well. It is used for many applications, such as making signs, covers of storage boxes, aircraft canopies and windows, covers for car lights, wash basins and baths.
+</li>
+<li><a href="http://en.wikipedia.org/wiki/Nylon">Nylon</a> (Polyamide) is creamy in colour, tough, fairly hard, resists wear, self-lubricating and has good resistance to chemicals. Commonly used to produce bearings, gear wheels, casings for power tools, hinges for small cupboards, curtain rail fittings and clothing. 
+</li>
+<li><a href="http://en.wikipedia.org/wiki/Polystyrene#Copolymers">HIPS</a> (High Impact Polystyrene) is economical and impact-resistant plastic that is easy to machine and fabricate. Used for low strength structural applications when impact resistance, machinability, and low cost are required. It is frequently used machining pre-production prototypes since it has excellent dimensional stability and is easy to fabricate, paint, and glue.
+</li>
+<li>A <a href="http://en.wikipedia.org/wiki/Thermosetting_polymer"><b>thermosetting plastic</b></a> (also known in industry as thermoset) is a plastic which irreversibly cures. They typically start off in a liquid form (so they can be molded into shape), and are then cured by a process such as heat, chemical reaction or irradiation to set them.
+</li>
+<li><a href="http://en.wikipedia.org/wiki/Urea-formaldehyde">Urea formaldehyde</a> provides high tensile strength, good surface hardness and heat resistance as well as being a good electrical insulator. It is used for electrical fittings, handles and control knobs and to make adhesives. Its is also used as the bonding agent in.
+</li>
+<li><a href="http://en.wikipedia.org/wiki/Melamine_resin">Melamine formaldehyde</a> is stiff, hard, strong and resists some chemicals and stains. It is commonly used in laminates for work surfaces, electrical insulation and tableware. 
+</li>
+<li><a href="http://en.wikipedia.org/wiki/Epoxy">Epoxy resin</a> is a good electrical insulator, which is hard, brittle unless reinforced and resists chemicals well. It is used mainly for casting and encapsulation, adhesives and for the bonding of other materials.
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-1-3" class="outline-3 learn">
+<h3 id="sec-1-3">Woods</h3>
+<div class="outline-text-3" id="text-1-3">
+<ul class="org-ul">
+<li>Wood has been used since pre-historic times to provide fuel for heat, and as a building material to produce homes and tools. We divide woods into three categories.
+</li>
+<li><a href="http://en.wikipedia.org/wiki/Hardwood"><b>Hardwoods</b></a> come from broad-leaved, deciduous trees. The main hardwood timbers are ash, beech, birch, cherry, elm, mahogany, oak, balsa and teak.
+<ul class="org-ul">
+<li>Ash is light, creamy-brown in colour and both tough and flexible. It is often used to make sports equipment, wooden ladders and tool handles.
+</li>
+<li>Beech is white to pinkish-brown in colour, close-grained, hard, tough, strong, but warps easily. Commonly found in        furniture, toys and tool handles.
+</li>
+<li>Elm is light to medium brown in colour, tough, resists splitting, and is durable in water. Elm is commonly used for indoor and outdoor furniture.
+</li>
+<li>Mahogany is Pink to reddish-brown colour, fairly strong, durable and used for good quality furniture.
+</li>
+<li>Oak is light brown colour, strong, hard, and tough. It corrodes steel screws and fittings. It is used for interior woodwork and good quality furniture.
+</li>
+<li>Balsa is creamy/light brown in colour, which is extremely fast growing and very lightweight. While low in density, it is high in strength and is commonly used for light, stiff structures, such as model aircraft and model buildings.  
+</li>
+</ul>
+</li>
+<li><a href="http://en.wikipedia.org/wiki/Softwood"><b>Softwoods</b></a> are from fast-growing coniferous trees which are evergreen, needle-leaved, cone-bearing trees, such as cedar, fir and pine.
+</li>
+
+<li>Tip: Hardwood and Softwood do not refer to the properties of the wood: some softwoods can be hard and some hardwoods can be soft.
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-1-4" class="outline-3 learn">
+<h3 id="sec-1-4">Manmade Boards</h3>
+<div class="outline-text-3" id="text-1-4">
+<ul class="org-ul">
+<li><a href="http://en.wikipedia.org/wiki/Engineered_wood">Manmade boards</a> are created from other woods, to give specific properties (and are usually relatively cheap compared to hard and softwoods).
+</li>
+<li><b>Blockboard</b> is built up with a core of softwood strips bonded together with adhesive and covered with a sheet of plywood on either side. Used as a building material and for furniture manufacture including fitted kitchens / bedrooms.
+</li>
+<li><a href="http://en.wikipedia.org/wiki/Particle_board"><b>Chipboard</b></a> is made up of small chips of wood bonded together with resin and formed into sheets by compression. It is not as strong as plywood and block board but it is not expensive. Chipboard is often covered with a plastic laminate or wood veneer and used in furniture. Chipboard could contain partials of metal, grit and any other rubbish that gets taken up into a tree whilst growing, is also the most unstable board because of air pockets, will swell up to twice its thickness when damp.         
+</li>
+<li><b>Hardboard</b> is made from wood fibres that have been pulped. The pulp is put under pressure until the fibres bond to produce a tough board that is smooth on one side and rough on the other. It is not as strong as the other boards. When supplied, it is smooth one side and rough the other, because of the drying process and is flexible, generally buckles at the first sign of dampness in the air, used mainly for backs of cupboards.
+</li>
+<li><a href="http://en.wikipedia.org/wiki/Medium-density_fibreboard"><b>MDF</b></a> (Medium Density Fibreboard) is quality board, which is relatively cheap. This board is composed of fine wood dust and resin pressed into a board. MDF is the most stable manmade board, and can have a ply or laminate finish added to it to make its finish more aesthetically pleasing. Low Density and High density re also available, as it water resistant MDF (which is usually green in colour). MDF can be worked, shaped and machined easily. Paint can be applied to it without the need for an undercoat or primer. Used in the building and furniture trades, as well as in schools.
+</li>
+<li><a href="http://en.wikipedia.org/wiki/Plywood"><b>Plywood</b></a> is made from veneers (thin plies) of timber with each grain layer being at right angles to each other and bonded together by resin and pressure. A number of grades are available, designed to suit a variety of situations, such as Marine plywood that is moisture resistant (although it will still warp) or weatherproof plywood. Ply is the only board that uses layers of pure wood. If the grains are laid parallel with each other it becomes flexible along the grain; if laid at right angles it becomes more rigid. 
+</li>
+<li>All boards come in standard thicknesses of 3, 6, 9, 12, 15, 18 &amp; 25mm.
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-1-5" class="outline-3 learn">
+<h3 id="sec-1-5">Smart Materials</h3>
+<div class="outline-text-3" id="text-1-5">
+<ul class="org-ul">
+<li>Advances in technology have yielded cutting edge, Smart materials, which have been created to provide specific properties. 
+</li>
+<li><a href="http://en.wikipedia.org/wiki/Shape-memory_alloy"><b>Smart wire</b></a> is sometimes called ‘Nitinol’, as it is a composed of nickel and titanium. It can be folded to form complex shapes quite easily and it conducts electricity, but is very expensive when compared to ordinary steel or even copper wire. However, it has properties that make it very special:
+<ol class="org-ol">
+<li>The wire has a memory - for example, if it is folded to form a shape and then heated above 90°C it returns to its original shape.
+</li>
+<li>The material can also be ‘programmed’ to remember a shape. This can be achieved by folding the wire to a particular shape and clamping it in position. The wire is then heated for approximately five minutes at precisely 150° or pass an electric current through the wire. If the wire is now folded into another shape and then placed in hot water it returns to the original ‘programmed’ shape. 
+</li>
+</ol>
+</li>
+<li><b>Muscle wire</b> is also a nickel and titanium alloy. At room temperature it can be stretched by a small force. However, when a small current is passed through the wire it returns to a much harder form and to its original length with a reasonable force. When in use a muscle wire can be stretched up to 8 percent of its length and still recover. However, this can only be done a few times until it breaks or stops returning to its original length. Its life cycle can be extended dramatically if it is stretched to between 3 to 5 percent of its overall length. Within this range it will go through the stretching and return cycle millions of times.
+</li>
+<li><a href="http://en.wikipedia.org/wiki/Polycaprolactone"><b>Polymorph</b></a> is a thermoplastic material that can be shaped and reshaped any number of times. it is normally supplied as granules that look like small plastic beads. In the classroom it can be heated in hot water and when it reaches 62 degrees centigrade the granules form a mass of ‘clear’ material. When removed from the hot water it can be shaped into almost any form and on cooling it becomes as solid as a material such as nylon. Although expensive, polymorph is suitable for 3D modeling as it can be shaped by hand or pressed into a shape through the use of a mold.
+</li>
+<li><a href="http://en.wikipedia.org/wiki/Quantum_tunnelling_composite"><b>Quantum Tunneling Composite</b></a> (QTC) is available as small “pills”. This material provides increasing levels of conductivity as pressure is applied to it, making it useful for dimmer switches, pressure sensors and for integrating into clothing.
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-1-6" class="outline-3 learn">
+<h3 id="sec-1-6">Comparative Testing</h3>
+<div class="outline-text-3" id="text-1-6">
+<ul class="org-ul">
+<li>When selecting materials for a particular task, it may be necessary to test different samples to ensure that they will need the product specification (e.g. for weight, cost, durability, etc). 
+</li>
+<li><a href="http://en.wikipedia.org/wiki/Ultimate_tensile_strength"><b>Tensile strength</b></a> (how much something can be stretched before it breaks) can be tested in a workshop by clamping a sample, then hanging increasing amounts of weight from it until the sample breaks. Some materials will start to stretch first, whereas others hold their shape and break suddenly. 
+</li>
+<li><a href="http://en.wikipedia.org/wiki/Compressive_strength"><b>Compressive strength</b></a> (resistance to deformation by a crushing load) can be measured by finding the amount of weight required to deform a material. Some materials rupture when the load exceeds their ultimate compressive strength (e.g. Concrete), whereas other materials (e.g. Wood and some plastics) deform. With non-rupturing materials, measurements can be taken of how much force is required to deform samples by 1%, 5%, 10%, etc. 
+</li>
+<li><a href="http://en.wikipedia.org/wiki/Hardness"><b>Hardness</b></a> can be measured by taking samples of the different materials that are to be tested which have a sharp corner, and seeing which sample can scratch which material. By comparing all the materials, it will be possible to rank all the samples to establish which is the hardest. 
+</li>
+<li><a href="http://en.wikipedia.org/wiki/Toughness"><b>Toughness</b></a> can be tested by placing identical-sized samples of materials in a vice, then subjecting each one to an identical impact (e.g. a hammer blow set up by a jig, and dropped from the same angle each time), and measuring the angle the material is bent to. 
+</li>
+<li><a href="http://en.wikipedia.org/wiki/Fusibility"><b>Fusibility</b></a> can be measured by heating samples until they melt, and recording the temperature at which this occurs.
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-2" class="outline-2 activity">
+<h2 id="sec-2"><span class="section-number-2">2</span> Recap</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-sec-2-1" class="outline-3 try">
+<h3 id="sec-2-1">Past Paper Questions</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li><b>June 2009, SCT1. Q4.</b> (a) With reference to the working properties of each material and any other factors which you consider relevant, explain the suitability of the following materials for each of the products. 
+<ul class="org-ul">
+<li>Wardrobe made from pine
+<ul class="org-ul">
+<li>Knife blade made from stainless steel
+</li>
+</ul>
+</li>
+<li>Kitchen worktop made from plastic coated chipboard
+<ul class="org-ul">
+<li>Mobile phone casing made from ABS plastic <i>(4× 5 marks)</i>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>(b) Discuss the advantages and disadvantages of using CAD/CAM instead of jigs or templates in manufacturing situations. <i>(8 marks)</i>
+</li>
+</ul>
+
+
+<ul class="org-ul">
+<li><b>Specimen paper, Q1.</b> Explain the following terms and give an example of a specific material for each term: -
+(a) Alloy <i>(2 marks)</i>
+(b) Composite <i>(2 marks)</i>
+</li>
+</ul>
+
+
+<ul class="org-ul">
+<li><b>June 2009, Q1.</b> Giving an example material, explain the term "non-ferrous metal". <i>(2 marks)</i>
+</li>
+</ul>
+
+
+<ul class="org-ul">
+<li><b>June 2009, Q2.</b> Giving an example material, explain the term "thermoforming plastic". <i>(2 marks)</i>
+</li>
+</ul>
+
+
+<ul class="org-ul">
+<li><b>June 2010, Q1.</b> Explain the following terms and give an example of a specific material for each. 
+<ul class="org-ul">
+<li>(a) An alloy <i>(2 marks)</i>
+</li>
+<li>(b) A hardwood <i>(2 marks)</i>
+</li>
+</ul>
+</li>
+</ul>
+
+
+<ul class="org-ul">
+<li><b>June 2010, Q5.</b> (a) (i) Define the term tensile strength. <i>(2 marks)</i>
+</li>
+<li>(a) (ii) With the aid of annotated sketches describe a suitable test that could be carried out to compare the tensile strength of a range of metals. Your answer should indicate:
+<ul class="org-ul">
+<li>the approximate size of the sample
+</li>
+<li>the method of applying the load
+</li>
+<li>the data that needs to be collected
+</li>
+<li>the method of collecting the data
+</li>
+<li>how the data is analysed. <i>(8 marks)</i>
+</li>
+</ul>
+</li>
+<li>(b) (i) Define the term compressive strength. <i>(2 marks)</i>
+</li>
+<li>(b) (ii) With the aid of annotated sketches describe a suitable test that could be carried out to compare the compressive strength of a range of woods. Your answer should indicate:
+<ul class="org-ul">
+<li>the approximate size of the sample
+</li>
+<li>the method of applying the load
+</li>
+<li>the data that needs to be collected
+</li>
+<li>the method of collecting the data
+</li>
+<li>how the data is analysed. <i>(8 marks)</i>
+</li>
+</ul>
+</li>
+</ul>
+
+
+<ul class="org-ul">
+<li><b>June 2011, Q3.</b> With the aid of an annotated sketch, describe a method of using heat to permanently join two pieces of metal together. <i>(4 marks)</i>
+</li>
+</ul>
+
+
+<ul class="org-ul">
+<li><b>June 2012, Q1.</b> (a) Name a man-made board that uses lamination for strength. <i>(1 mark)</i>
+<ul class="org-ul">
+<li>(b) Name an alloy. <i>(1 mark)</i>
+</li>
+<li>(c) List the two main materials that make up the alloy you have named above. <i>(2 marks)</i>
+</li>
+</ul>
+</li>
+</ul>
+
+
+<ul class="org-ul">
+<li><b>June 2012, Q3.</b> With the aid of an annotated sketch, describe a method of temporarily joining two pieces of metal together so they can be disassembled for maintenance purposes. <i>(4 marks)</i>
+</li>
+</ul>
+
+
+<ul class="org-ul">
+<li><b>June 2012, Q6.</b> (a) Using annotated sketches, describe a suitable test that could be carried out to compare the resistance to bending forces of a range of plastics. Your answer should indicate:
+<ul class="org-ul">
+<li>the approximate size of the sample
+</li>
+<li>the method of applying the load
+</li>
+<li>the data that needs to be collected
+</li>
+<li>the method of collecting the data
+</li>
+<li>how the data is analysed. <i>(10 marks)</i>
+</li>
+</ul>
+</li>
+</ul>
+
+<p>
+<a href="index.html">Return to homepage</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="validation"></p>
+</div>
+</body>
+</html>
