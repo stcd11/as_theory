@@ -1,0 +1,223 @@
+#+STARTUP:indent
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+#+HTML_HEAD_EXTRA: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+#+BEGIN_COMMENT
+#+STYLE: <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+#+STYLE: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+#+END_COMMENT
+#+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil 
+#+TITLE: Mechanical Systems
+#+AUTHOR: Stephen Brown
+
+#+BEGIN_HTML
+<div class="github-fork-ribbon-wrapper left">
+<div class="github-fork-ribbon">
+<a href="https://github.com/stsb11/as_theory">Fork me on GitHub</a>
+</div>
+</div>
+<center>
+<img src='./img/pulley_1.png' width=50%>
+</center>
+#+END_HTML
+
+* COMMENT Use as a template
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Learn It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+
+** Research It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: research
+:END:
+
+** Design It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: design
+:END:
+
+** Build It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: build
+:END:
+
+** Test It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: test
+:END:
+
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+
+** Document It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: document
+:END:
+
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+
+** Program It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: program
+:END:
+
+** Try It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+
+** Badge It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: badge
+:END:
+
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+
+e* Introduction
+[[file:img/pic.jpg]]
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: intro
+:END:
+** What are PIC chips?
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: research
+:END:
+Peripheral Interface Controllers are small silicon chips which can be programmed to perform useful tasks.
+In school, we tend to use Genie branded chips, like the C08 model you will use in this project. Others (e.g. PICAXE) are available.
+PIC chips allow you connect different inputs (e.g. switches) and outputs (e.g. LEDs, motors and speakers), and to control them using flowcharts.
+Chips such as these can be found everywhere in consumer electronic products, from toasters to cars. 
+
+While they might not look like much, there is more computational power in a single PIC chip used in school than there was in the space shuttle that went to the moon in the 60's!
+** When would I use a PIC chip?
+Imagine you wanted to make a flashing bike light; using an LED and a switch alone, you'd need to manually push and release the button to get the flashing effect. A PIC chip could be programmed to turn the LED off and on once a second.
+In a board game, you might want to have an electronic dice to roll numbers from 1 to 6 for you. 
+In a car, a circuit is needed to ensure that the airbags only deploy when there is a sudden change in speed, AND the passenger is wearing their seatbelt, AND the front or rear bumper has been struck. PIC chips can carry out their instructions very quickly, performing around 1000 instructions per second - as such, they can react far more quickly than a person can. 
+* Introduction
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+- From children’s’ toys to the Martian lander, electronics need to be combined with electromechanical systems in order for the end result to be able to interact with the real world. There are four different basic types of motion, and the ability to transfer one form to the other in different ways gives the ability to produce new, useful machines. 
+** Types of Motion
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- [[http://en.wikipedia.org/wiki/Linear_motion][Linear]]. Motion in a straight line, e.g. a paper guillotine, mono-stable solenoid or a train travelling along a straight track. 
+- [[http://en.wikipedia.org/wiki/Reciprocating_motion][Reciprocating]]. Motion back and forth in a straight line, e.g. a saw, bi-stable solenoid or sewing machine needle. 
+- [[http://en.wikipedia.org/wiki/Oscillation][Oscillating]]. Motion back and forth on a curved path, e.g. the pendulum on a clock, servo motor or a back-and-forth lawn sprinkler.
+- [[http://en.wikipedia.org/wiki/Rotation_around_a_fixed_axis][Rotary]]. Motion traveling in a circular path, e.g. hands on a clock, a wheel or a DC motor.
+** Mechanical Components
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- Classification and an awareness of everyday mechanical applications. Identify the different types of motion that can be seen in a bicycle, steam train, car and other everyday systems. 
+
+The BBC have an excellent resource looking at different mechanisms and linkages, which can be found over at:
+http://www.bbc.co.uk/schools/gcsebitesize/design/systemscontrol/mechanismsrev1.shtml
+** Mechanical Processes
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- A minimum of two mechanical systems to provide each of the following transmissions of motion: -
+
+- a) Rotary to rotary (parallel shafts)
+Either a gear train (with three gears if the output direction is to remain unchanged) or belt & pulley systems can be used here. By having a larger number of teeth on the first gear, the output speed can be increased. By using a larger diameter input pulley, the driven shaft can be made to move more quickly.
+- b) Rotary to rotary (perpendicular shafts)
+Beveled gears, a worm-gear meshed with a perpendicular gear or perpendicular pulleys driven by friction can be used. As with the previous example, increasing the size of the input gear/pulley will increase the driven gear’s speed. 
+
+c) Rotary to linear / linear to rotary.
+A driven wheel running along a flat track (as seen in a car). By increasing the size of the wheel, the movement will be amplified (as long as the RPM of the wheel are maintained)
+
+d) Rotary to reciprocating 
+A cam and follower is the simplest way to achieve this conversion – by customizing the cam shape (there are numerous cam shapes, all with their own names), the displacement distance and speed can be modified.
+
+A rack and pinion gearing system provides the means to move back and forward, driven from either the rack or pinion gear. By increasing the number of teeth on the pinion gear, the speed at which the rack moves also increases.  
+
+e) Reciprocating to rotary
+A crank, link and slider (as seen on traditional steam trains). By increasing the distance from the link to the centre of the crank, the displacement of each stroke can be increased.
+
+f) Rotary to oscillatory / Oscillatory to rotary
+The treadle linkage (seen in car windscreen wipers and traditional foot-powered sewing machines) or a peg-and-slot mechanism both allow this type of movement conversion. 
+** Amplifying Pulley velocity and Torque
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- Example question (*June 2008 P1, Q1f*). Using any number of 20mm, 40mm, 60mm and 80mm diameter pulleys, sketch and label a pulley system that will amplify:
+	1. Rotary velocity by a factor of 12. Show your calculations 	/(6 marks)/
+	2. Torque by a factor of 8. Show your calculations		/(6 marks)/
+
+- To increase the speed of the output pulley by 12, we need to produce a 1:12 ratio over the space of whatever pulley combination we will end up using. When I looked at this question, the first thing I did was to see what the biggest ratio I could get was by using the smallest and largest pulley values – the 20mm and 80mm ones in this case. This would give a 20:80 -> 2:8 -> *1:4 ratio*. 
+
+- This is only a third of what is needed, so another pulley pair will be needed to get the result required. Next, I looked for a pair of pulleys I could use which would provide a 3:1 ratio; I selected the 20mm and the 60mm, which gives a ratio of 20:60 -> 2:6 -> 1:3. 
+
+     - 1:3 x 1:4 = *1:12*, so my pulley system would look something like this…
+[[./img/pulley_1.png]]
+- A torque factor of 8 means reducing the speed by 8x in order to increase the amount of turning force exerted by the output pulley. The same process is applied as before, but the prime mover will be on the other side of the diagram I’ll end up drawing (for instance, in the previous question, I could have amplified the torque by a factor of 12 if I’d attached a motor to the left-most pulley rather than the right). The first steps I took this time were again to start by looking at my biggest ratio (80mm and 20mm -> 4:1 – note that as I’m going for speed reduction, I’ve written the ratio the other way round). I then looked for another pair of pulleys that would give me a 2:1 ratio to achieve the 8:1 I need. Both 40mm/20mm or 80mm/40mm would do this – I chose 40mm/20mm to keep the size of the pulleys small. 40:20 -> 4:2 -> 2:1. 
+     - 4:1 x 2:1 = *8:1*
+[[./img/pulley_2.png]]
+** Amplifiers
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- Amplifying Current...
+    1. An NPN transistor, when the load is connected to the emitter pin will act as a current amplifier, multiplying the output current by the hFE of the transistor (this varies from model to model).
+    2. An operational amplifier can act as a current amplifier, producing thousands of times more than the incoming current. 
+- Amplifying Voltage...
+    1. An NPN transistor, when the load is connected through the desired voltage rail and the collector will act as a voltage amplifier. 
+    2. Op-Amps can also be used to boost small input signals. Examples can be seen [[http://www.societyofrobots.com/schematics_voltamp.shtml][here]].
+
+** Comparators
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- Comparing different input voltages: PIC chips normally have both digital and analogue inputs, which will allow different input voltages to be read, and converted into a integer (0-255 on an 8-bit Genie PIC), and then processed as desired in code. 
+- Digital inputs. PIC chips have multiple digital inputs that can be used to detect input signals from PTM switches, big changes in LDRs, etc.  
+- Output Transducers. Ensure that you can identify at least one electronic output transducer for each of the following:
+    - Linear motion. Solenoid.
+    - Rotary motion. DC motor or stepper motor.
+    - Precise angular movement. Servo motor.
+    - Heat. Heating element.
+    - Light. LED or bulb.
+    - Sound. Piezo transducer or speaker.
+    - Amplification. NPN transistor or Operational Amplifier.
+    - Magnetism. Electromagnet (copper wire wound around an iron core), or a relay (which contains a small electromagnet).
+* Recap
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Past Paper Questions
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+- *Specimen Paper, Q2.* An electronic method of producing a time delay is shown here.
+[[./img/spec_q2.png]]
+- (a) Explain in detail at least four stages the operation of the circuit as the switch SW1 is connected to R1. /(4× 1 mark)/
+- (b) Give two methods of increasing the time delay of the circuit. /(2 marks)/
+
+
+- *June 2009, Q7.* (a) Describe in detail one method of producing a Printed Circuit Board (PCB). /(8 marks)/
+- (b) Identify two health and safety risks when producing and soldering components onto printed circuit boards and state how these risks may be reduced. /(4 marks)/
+- (c) Electronic circuits can be prototyped using breadboard or by modelling on a computer simulation package. Compare these two methods of prototyping electronic circuits. /(8 marks)/
+
+
+- *June 2011, Q5.* (a) Using a diagram, describe two different systems for producing a time delay suitable for switching on a 240 volt ac lamp for 10 minutes when a switch is momentarily pushed. /(16 marks)/
+- (b) Choose one of your systems given in part (a). Explain how it would be possible to make the system adjustable so the time period could be any value between 2 and 30 minutes. /(4 marks)/
+
+
+- *June 2012, Q5 (a)* 5 (a) (i) With the aid of diagrams, describe two different systems for continuously flashing a normal LED. The LED should switch on for approximately 2 seconds then off for approximately 3 seconds. Your solutions should include any relevant calculations. /(16 marks)/
+- (b) Choose one of your solutions from part 5(a). Explain how it would be possible to modify the system for switching on a 240volt ac lamp. /(4 marks)/
+
+
+- *June 2012, Q7.* (a) A system is required to automatically monitor and control the temperature in a room. With the aid of diagrams, show two systems that would produce an electrical output of at least 2 volts at 10mA when the temperature exceeds 25°C. /(8 Marks)/
+
+[[file:index.html][Return to homepage]]

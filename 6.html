@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Mechanical Systems</title>
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Mechanical Systems</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. Introduction</a>
+<ul>
+<li><a href="#sec-1-1">Types of Motion</a></li>
+<li><a href="#sec-1-2">Mechanical Components</a></li>
+<li><a href="#sec-1-3">Mechanical Processes</a></li>
+<li><a href="#sec-1-4">Amplifying Pulley velocity and Torque</a></li>
+<li><a href="#sec-1-5">Amplifiers</a></li>
+<li><a href="#sec-1-6">Comparators</a></li>
+</ul>
+</li>
+<li><a href="#sec-2">2. Recap</a>
+<ul>
+<li><a href="#sec-2-1">Past Paper Questions</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="github-fork-ribbon-wrapper left">
+<div class="github-fork-ribbon">
+<a href="https://github.com/stsb11/as_theory">Fork me on GitHub</a>
+</div>
+</div>
+<center>
+<img src='./img/pulley_1.png' width=50%>
+</center>
+
+<div id="outline-container-sec-1" class="outline-2 activity">
+<h2 id="sec-1"><span class="section-number-2">1</span> Introduction</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>From children’s’ toys to the Martian lander, electronics need to be combined with electromechanical systems in order for the end result to be able to interact with the real world. There are four different basic types of motion, and the ability to transfer one form to the other in different ways gives the ability to produce new, useful machines. 
+</li>
+</ul>
+</div>
+<div id="outline-container-sec-1-1" class="outline-3 learn">
+<h3 id="sec-1-1">Types of Motion</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li><a href="http://en.wikipedia.org/wiki/Linear_motion">Linear</a>. Motion in a straight line, e.g. a paper guillotine, mono-stable solenoid or a train travelling along a straight track. 
+</li>
+<li><a href="http://en.wikipedia.org/wiki/Reciprocating_motion">Reciprocating</a>. Motion back and forth in a straight line, e.g. a saw, bi-stable solenoid or sewing machine needle. 
+</li>
+<li><a href="http://en.wikipedia.org/wiki/Oscillation">Oscillating</a>. Motion back and forth on a curved path, e.g. the pendulum on a clock, servo motor or a back-and-forth lawn sprinkler.
+</li>
+<li><a href="http://en.wikipedia.org/wiki/Rotation_around_a_fixed_axis">Rotary</a>. Motion traveling in a circular path, e.g. hands on a clock, a wheel or a DC motor.
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-1-2" class="outline-3 learn">
+<h3 id="sec-1-2">Mechanical Components</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li>Classification and an awareness of everyday mechanical applications. Identify the different types of motion that can be seen in a bicycle, steam train, car and other everyday systems. 
+</li>
+</ul>
+
+<p>
+The BBC have an excellent resource looking at different mechanisms and linkages, which can be found over at:
+<a href="http://www.bbc.co.uk/schools/gcsebitesize/design/systemscontrol/mechanismsrev1.shtml">http://www.bbc.co.uk/schools/gcsebitesize/design/systemscontrol/mechanismsrev1.shtml</a>
+</p>
+</div>
+</div>
+<div id="outline-container-sec-1-3" class="outline-3 learn">
+<h3 id="sec-1-3">Mechanical Processes</h3>
+<div class="outline-text-3" id="text-1-3">
+<ul class="org-ul">
+<li>A minimum of two mechanical systems to provide each of the following transmissions of motion: -
+</li>
+
+<li>a) Rotary to rotary (parallel shafts)
+</li>
+</ul>
+<p>
+Either a gear train (with three gears if the output direction is to remain unchanged) or belt &amp; pulley systems can be used here. By having a larger number of teeth on the first gear, the output speed can be increased. By using a larger diameter input pulley, the driven shaft can be made to move more quickly.
+</p>
+<ul class="org-ul">
+<li>b) Rotary to rotary (perpendicular shafts)
+</li>
+</ul>
+<p>
+Beveled gears, a worm-gear meshed with a perpendicular gear or perpendicular pulleys driven by friction can be used. As with the previous example, increasing the size of the input gear/pulley will increase the driven gear’s speed. 
+</p>
+
+<p>
+c) Rotary to linear / linear to rotary.
+A driven wheel running along a flat track (as seen in a car). By increasing the size of the wheel, the movement will be amplified (as long as the RPM of the wheel are maintained)
+</p>
+
+<p>
+d) Rotary to reciprocating 
+A cam and follower is the simplest way to achieve this conversion – by customizing the cam shape (there are numerous cam shapes, all with their own names), the displacement distance and speed can be modified.
+</p>
+
+<p>
+A rack and pinion gearing system provides the means to move back and forward, driven from either the rack or pinion gear. By increasing the number of teeth on the pinion gear, the speed at which the rack moves also increases.  
+</p>
+
+<p>
+e) Reciprocating to rotary
+A crank, link and slider (as seen on traditional steam trains). By increasing the distance from the link to the centre of the crank, the displacement of each stroke can be increased.
+</p>
+
+<p>
+f) Rotary to oscillatory / Oscillatory to rotary
+The treadle linkage (seen in car windscreen wipers and traditional foot-powered sewing machines) or a peg-and-slot mechanism both allow this type of movement conversion. 
+</p>
+</div>
+</div>
+<div id="outline-container-sec-1-4" class="outline-3 learn">
+<h3 id="sec-1-4">Amplifying Pulley velocity and Torque</h3>
+<div class="outline-text-3" id="text-1-4">
+<ul class="org-ul">
+<li>Example question (<b>June 2008 P1, Q1f</b>). Using any number of 20mm, 40mm, 60mm and 80mm diameter pulleys, sketch and label a pulley system that will amplify:
+<ol class="org-ol">
+<li>Rotary velocity by a factor of 12. Show your calculations         <i>(6 marks)</i>
+</li>
+<li>Torque by a factor of 8. Show your calculations                <i>(6 marks)</i>
+</li>
+</ol>
+</li>
+
+<li>To increase the speed of the output pulley by 12, we need to produce a 1:12 ratio over the space of whatever pulley combination we will end up using. When I looked at this question, the first thing I did was to see what the biggest ratio I could get was by using the smallest and largest pulley values – the 20mm and 80mm ones in this case. This would give a 20:80 -&gt; 2:8 -&gt; <b>1:4 ratio</b>. 
+</li>
+
+<li>This is only a third of what is needed, so another pulley pair will be needed to get the result required. Next, I looked for a pair of pulleys I could use which would provide a 3:1 ratio; I selected the 20mm and the 60mm, which gives a ratio of 20:60 -&gt; 2:6 -&gt; 1:3. 
+
+<ul class="org-ul">
+<li>1:3 x 1:4 = <b>1:12</b>, so my pulley system would look something like this…
+</li>
+</ul>
+</li>
+</ul>
+
+<div class="figure">
+<p><img src="./img/pulley_1.png" alt="pulley_1.png" />
+</p>
+</div>
+<ul class="org-ul">
+<li>A torque factor of 8 means reducing the speed by 8x in order to increase the amount of turning force exerted by the output pulley. The same process is applied as before, but the prime mover will be on the other side of the diagram I’ll end up drawing (for instance, in the previous question, I could have amplified the torque by a factor of 12 if I’d attached a motor to the left-most pulley rather than the right). The first steps I took this time were again to start by looking at my biggest ratio (80mm and 20mm -&gt; 4:1 – note that as I’m going for speed reduction, I’ve written the ratio the other way round). I then looked for another pair of pulleys that would give me a 2:1 ratio to achieve the 8:1 I need. Both 40mm/20mm or 80mm/40mm would do this – I chose 40mm/20mm to keep the size of the pulleys small. 40:20 -&gt; 4:2 -&gt; 2:1. 
+<ul class="org-ul">
+<li>4:1 x 2:1 = <b>8:1</b>
+</li>
+</ul>
+</li>
+</ul>
+
+<div class="figure">
+<p><img src="./img/pulley_2.png" alt="pulley_2.png" />
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-1-5" class="outline-3 learn">
+<h3 id="sec-1-5">Amplifiers</h3>
+<div class="outline-text-3" id="text-1-5">
+<ul class="org-ul">
+<li>Amplifying Current&#x2026;
+<ol class="org-ol">
+<li>An NPN transistor, when the load is connected to the emitter pin will act as a current amplifier, multiplying the output current by the hFE of the transistor (this varies from model to model).
+</li>
+<li>An operational amplifier can act as a current amplifier, producing thousands of times more than the incoming current. 
+</li>
+</ol>
+</li>
+<li>Amplifying Voltage&#x2026;
+<ol class="org-ol">
+<li>An NPN transistor, when the load is connected through the desired voltage rail and the collector will act as a voltage amplifier. 
+</li>
+<li>Op-Amps can also be used to boost small input signals. Examples can be seen <a href="http://www.societyofrobots.com/schematics_voltamp.shtml">here</a>.
+</li>
+</ol>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1-6" class="outline-3 learn">
+<h3 id="sec-1-6">Comparators</h3>
+<div class="outline-text-3" id="text-1-6">
+<ul class="org-ul">
+<li>Comparing different input voltages: PIC chips normally have both digital and analogue inputs, which will allow different input voltages to be read, and converted into a integer (0-255 on an 8-bit Genie PIC), and then processed as desired in code. 
+</li>
+<li>Digital inputs. PIC chips have multiple digital inputs that can be used to detect input signals from PTM switches, big changes in LDRs, etc.  
+</li>
+<li>Output Transducers. Ensure that you can identify at least one electronic output transducer for each of the following:
+<ul class="org-ul">
+<li>Linear motion. Solenoid.
+</li>
+<li>Rotary motion. DC motor or stepper motor.
+</li>
+<li>Precise angular movement. Servo motor.
+</li>
+<li>Heat. Heating element.
+</li>
+<li>Light. LED or bulb.
+</li>
+<li>Sound. Piezo transducer or speaker.
+</li>
+<li>Amplification. NPN transistor or Operational Amplifier.
+</li>
+<li>Magnetism. Electromagnet (copper wire wound around an iron core), or a relay (which contains a small electromagnet).
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-2" class="outline-2 activity">
+<h2 id="sec-2"><span class="section-number-2">2</span> Recap</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-sec-2-1" class="outline-3 try">
+<h3 id="sec-2-1">Past Paper Questions</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li><b>Specimen Paper, Q2.</b> An electronic method of producing a time delay is shown here.
+</li>
+</ul>
+
+<div class="figure">
+<p><img src="./img/spec_q2.png" alt="spec_q2.png" />
+</p>
+</div>
+<ul class="org-ul">
+<li>(a) Explain in detail at least four stages the operation of the circuit as the switch SW1 is connected to R1. <i>(4× 1 mark)</i>
+</li>
+<li>(b) Give two methods of increasing the time delay of the circuit. <i>(2 marks)</i>
+</li>
+</ul>
+
+
+<ul class="org-ul">
+<li><b>June 2009, Q7.</b> (a) Describe in detail one method of producing a Printed Circuit Board (PCB). <i>(8 marks)</i>
+</li>
+<li>(b) Identify two health and safety risks when producing and soldering components onto printed circuit boards and state how these risks may be reduced. <i>(4 marks)</i>
+</li>
+<li>(c) Electronic circuits can be prototyped using breadboard or by modelling on a computer simulation package. Compare these two methods of prototyping electronic circuits. <i>(8 marks)</i>
+</li>
+</ul>
+
+
+<ul class="org-ul">
+<li><b>June 2011, Q5.</b> (a) Using a diagram, describe two different systems for producing a time delay suitable for switching on a 240 volt ac lamp for 10 minutes when a switch is momentarily pushed. <i>(16 marks)</i>
+</li>
+<li>(b) Choose one of your systems given in part (a). Explain how it would be possible to make the system adjustable so the time period could be any value between 2 and 30 minutes. <i>(4 marks)</i>
+</li>
+</ul>
+
+
+<ul class="org-ul">
+<li><b>June 2012, Q5 (a)</b> 5 (a) (i) With the aid of diagrams, describe two different systems for continuously flashing a normal LED. The LED should switch on for approximately 2 seconds then off for approximately 3 seconds. Your solutions should include any relevant calculations. <i>(16 marks)</i>
+</li>
+<li>(b) Choose one of your solutions from part 5(a). Explain how it would be possible to modify the system for switching on a 240volt ac lamp. <i>(4 marks)</i>
+</li>
+</ul>
+
+
+<ul class="org-ul">
+<li><b>June 2012, Q7.</b> (a) A system is required to automatically monitor and control the temperature in a room. With the aid of diagrams, show two systems that would produce an electrical output of at least 2 volts at 10mA when the temperature exceeds 25°C. <i>(8 Marks)</i>
+</li>
+</ul>
+
+<p>
+<a href="index.html">Return to homepage</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="validation"></p>
+</div>
+</body>
+</html>
