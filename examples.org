@@ -26,18 +26,6 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: link-heading
 :END:
-* [[file:examples/2011.docx][June 2011 Paper]]
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: link-heading
-:END:
-* [[./examples/2012.docx][June 2012 Paper]]
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: link-heading
-:END:
-* [[file:examples/2013.docx][June 2013 Paper]]
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: link-heading
-:END:
 * [[./index.html][Return to homepage]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: link-heading
