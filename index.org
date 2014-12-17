@@ -18,11 +18,9 @@
 </div>
 </div>
 <center>
-<br>
-<img src=img/etch_tank.jpg width=25%>
+<img src=img/pencil.png width=70%>
 </center>
 #+END_HTML
-
 * [[file:1.html][Lesson 01 - Mathematics]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: link-heading
@@ -79,7 +77,7 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: link-heading
 :END:
-* [[./14.html][Exam Theory topic list]]
+* [[./theory.doc][Exam Theory topic list]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: link-heading
 :END:
