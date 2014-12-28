@@ -1,0 +1,188 @@
+#+STARTUP:indent
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+#+HTML_HEAD_EXTRA: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+#+BEGIN_COMMENT
+#+STYLE: <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+#+STYLE: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+#+END_COMMENT
+#+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil 
+#+TITLE: Systems & Control
+#+AUTHOR: Stephen Brown
+
+#+BEGIN_HTML
+<div class="github-fork-ribbon-wrapper left">
+<div class="github-fork-ribbon">
+<a href="https://github.com/stsb11/as_theory">Fork me on GitHub</a>
+</div>
+</div>
+<center>
+<img src='http://www.engagerc.com/media/3/a20791c1338ba8088f3b44_m.jpg' width=40%>
+</center>
+#+END_HTML
+
+* COMMENT Use as a template
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Learn It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+
+** Research It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: research
+:END:
+
+** Design It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: design
+:END:
+
+** Build It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: build
+:END:
+
+** Test It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: test
+:END:
+
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+
+** Document It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: document
+:END:
+
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+
+** Program It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: program
+:END:
+
+** Try It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+
+** Badge It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: badge
+:END:
+
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+
+e* Introduction
+[[file:img/pic.jpg]]
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: intro
+:END:
+** What are PIC chips?
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: research
+:END:
+Peripheral Interface Controllers are small silicon chips which can be programmed to perform useful tasks.
+In school, we tend to use Genie branded chips, like the C08 model you will use in this project. Others (e.g. PICAXE) are available.
+PIC chips allow you connect different inputs (e.g. switches) and outputs (e.g. LEDs, motors and speakers), and to control them using flowcharts.
+Chips such as these can be found everywhere in consumer electronic products, from toasters to cars. 
+
+While they might not look like much, there is more computational power in a single PIC chip used in school than there was in the space shuttle that went to the moon in the 60's!
+** When would I use a PIC chip?
+Imagine you wanted to make a flashing bike light; using an LED and a switch alone, you'd need to manually push and release the button to get the flashing effect. A PIC chip could be programmed to turn the LED off and on once a second.
+In a board game, you might want to have an electronic dice to roll numbers from 1 to 6 for you. 
+In a car, a circuit is needed to ensure that the airbags only deploy when there is a sudden change in speed, AND the passenger is wearing their seatbelt, AND the front or rear bumper has been struck. PIC chips can carry out their instructions very quickly, performing around 1000 instructions per second - as such, they can react far more quickly than a person can. 
+* Introduction
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+- For the exam, you need to be able to match control systems to specific industrial applications – consideration of mechanical, electrical, electronic, programmable logic units and microcontrollers.
+** Input/Output Devices
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- force
+- motion
+- movement 
+- velocity
+- pressure
+- voltage
+- current
+- resistance 
+- power
+- signals
+- positive and negative going pulses
+- positive and negative edge triggering
+- mark/Space ratio
+- amplitude
+- frequency
+** System Definitions
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- Ensure you know these definitions (Wikipedia has great definitions [[http://en.wikipedia.org/wiki/System][here]])
+   - definition of a system 
+   - system boundaries 
+   - sub-systems 
+   - system components System Building Blocks 
+   - sensors 
+   - input transducers 
+   - signal conditioners 
+   - timers 
+   - amplifiers 
+   - comparators 
+   - counters 
+   - latches 
+   - flip flops 
+   - logical operators 
+   - output transducers 
+   - programmable devices Interfacing System Blocks  The selection of suitable interfaces to establish connections in electrical, electronic and mechanical systems. e.g. motors, solenoid valves, relays and amplifiers.
+** Amplification
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- The amplification of: 
+   - force
+   - motion 
+   - movement
+   - velocity
+   - pressure
+   - voltage
+   - current
+   - power
+   - signal
+* Recap
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Past Paper Questions
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+- *2009, Q4.* Using an example of your choice, describe a closed loop control system. (4)
+
+
+- *2009, Q8.* (a) Describe two situations where frictional forces are undesirable in mechanical systems and explain how they may be reduced. (6)
+
+- (b) Using annotated sketches, describe the operation of two types of braking system used on mechanisms or machinery of your choice. (10)
+
+- (c) A lever is shown in the diagram below. Given that:
+    - Force A × Distance A = Force B × Distance B 
+[[./img/2009_q8a.png]]
+- calculate the effort required to balance the load. (4)
+
+
+- *2011, Q2(a).* Explain, feedback within a closed loop system /(2 marks)/
+
+[[file:index.html][Return to homepage]]
