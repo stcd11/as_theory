@@ -1,0 +1,284 @@
+#+STARTUP:indent
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+#+HTML_HEAD_EXTRA: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+#+BEGIN_COMMENT
+#+STYLE: <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+#+STYLE: <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu' rel='stylesheet' type='text/css'>
+#+END_COMMENT
+#+OPTIONS: f:nil author:nil num:1 creator:nil timestamp:nil 
+#+TITLE: Industrial and Commercial Practices
+#+AUTHOR: Stephen Brown
+
+#+BEGIN_HTML
+<div class="github-fork-ribbon-wrapper left">
+<div class="github-fork-ribbon">
+<a href="https://github.com/stsb11/as_theory">Fork me on GitHub</a>
+</div>
+</div>
+<center>
+<img src='./img/steel.jpg' width=40%>
+</center>
+#+END_HTML
+
+* COMMENT Use as a template
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Learn It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+
+** Research It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: research
+:END:
+
+** Design It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: design
+:END:
+
+** Build It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: build
+:END:
+
+** Test It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: test
+:END:
+
+** Run It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: run
+:END:
+
+** Document It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: document
+:END:
+
+** Code It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: code
+:END:
+
+** Program It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: program
+:END:
+
+** Try It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+
+** Badge It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: badge
+:END:
+
+** Save It
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: save
+:END:
+
+e* Introduction
+[[file:img/pic.jpg]]
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: intro
+:END:
+** What are PIC chips?
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: research
+:END:
+Peripheral Interface Controllers are small silicon chips which can be programmed to perform useful tasks.
+In school, we tend to use Genie branded chips, like the C08 model you will use in this project. Others (e.g. PICAXE) are available.
+PIC chips allow you connect different inputs (e.g. switches) and outputs (e.g. LEDs, motors and speakers), and to control them using flowcharts.
+Chips such as these can be found everywhere in consumer electronic products, from toasters to cars. 
+
+While they might not look like much, there is more computational power in a single PIC chip used in school than there was in the space shuttle that went to the moon in the 60's!
+** When would I use a PIC chip?
+Imagine you wanted to make a flashing bike light; using an LED and a switch alone, you'd need to manually push and release the button to get the flashing effect. A PIC chip could be programmed to turn the LED off and on once a second.
+In a board game, you might want to have an electronic dice to roll numbers from 1 to 6 for you. 
+In a car, a circuit is needed to ensure that the airbags only deploy when there is a sudden change in speed, AND the passenger is wearing their seatbelt, AND the front or rear bumper has been struck. PIC chips can carry out their instructions very quickly, performing around 1000 instructions per second - as such, they can react far more quickly than a person can. 
+* Introduction
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+- There are many ways to go about fabricating an electromechanical system. It is useful to know a variety of methods for working with resistant materials. 
+** Industrial Processes
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- Understanding of how familiar processes used in school are related to those used in the industrial context, especially with reference to batch and mass production.
+    - *[[http://en.wikipedia.org/wiki/Sand_casting][Sand casting]]:* A mould is formed from sand, and molten metal is poured into it to form the desired part. A low-cost method of forming metal parts with a reasonable degree of accuracy.
+    - *[[http://en.wikipedia.org/wiki/Die_casting][Die casting]]:* Forming metal parts by forcing molten metal into a mould. Better precision than sand casting, but unsuitable for high-volume manufacture.
+    - *[[http://en.wikipedia.org/wiki/Vacuum_forming][Vacuum Forming]]:* A method of working with thermoplastics, whereby a softened plastic sheet is stretched over a mould, and a vacuum pump is used to ensure the plastic sheet tightly follows the conours of the mould. 
+    - *PCB production:* The method is discussed in the GCSE notes, [[https://www.bournetoinvent.com/projects/gcse_theory/11.html][here]]. 
+** Wastage
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- For the exam, you need to know several hand and machine methods of shaping commonly available resistant materials by wastage. A wastage process is one where you start with a block of material (e.g. wood), and use tools to take away the parts you don't want /(e.g. drill, saw)/ to get the the overall shape is desired. 
+
+- *Hand methods*
+     1. A coping saw can be used where a curved or intricate line needs to be cut,
+     2. A panel saw can be used to cut larger pieces of timber,
+     3. A drill can be used to make circular holes.
+     4. A chisel can be used to precisely remove areas of a material.
+
+- *Machine methods*
+    1. A bandsaw will cut quickly through most woods at high speed, and can be used to cut curves – this requires training and a great deal of care.
+    2. A circular saw can be used to quickly cut through or to cut grooves in straight lines at high speed.
+
+- *CAM methods*
+     1. A CNC router can be programmed (using 3d software) to carve the desired shape from a block of wood. The wood to be cut needs to be firmly secured to the bed of the machine, to ensure the work piece isn’t dislodged by the high-speed cutting bits. 
+     2. A laser-cutter cuts shapes from sheet material using a tightly focused beam to cut through (and etch) thermoplastic materials. A design is created on a CAD package on the computer, then sent to the machine where it is cut. Extractor is turned on throughout and the user needs to avoid eye contact with the beam. 
+
+** Fabrication Methods
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- Mechanical methods which work on a variety of materials are:
+    - Machine screws (bolts) can be used with washers (to spread the load and help prevent breakage). Two surfaces are drilled slowly, then bolted. If requried, nylon-lined (nyloc) nuts can be used, which won't slip loose over time. 
+
+    - A CNC milling machine or router can be used in a similar way to a laser cutter, but to use a physical bit to cut away at the surface of the material. Careful work with a small chisel and hammer can be used to square off any corners where needed.
+
+- Temporary fabrication techniques suitable for wood, metal and plastic. A minimum of three mechanical methods
+** Woods
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- Permanent fabrication techniques suitable for *wood* are those which allow different pieces of wood to be permentantly joined together.
+    - *Mechanical methods* like self-tapping wood screws can be used to permanently join two pieces of wood together. A countersink can be used to ensure the screws finish flush with /(or beneath)/ the surface. 
+    - *Chemical methods* like PVA glue can be used to bond two wooden surfaces together. To ensure the strongest possible bond, the joints need to be close-fitting, and free from grease and dust. The glue is applied, before the two surfaces are clamped together. The bond will be better if the surface areas of the joints are increased (e.g. through the use of finger or dovetail joints).
+
+** Metals
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- Permanent fabrication techniques suitable for *metal*
+    - *Thermal methods* such as soldering allows two metals to bond together, and is commonly used to connect electronic  components to PCBs and to connect copper pipes together in household plumbing installations. 
+    - Another thermal method is [[http://en.wikipedia.org/wiki/Arc_welding][arc welding]], where an electric arc is formed between an electrode the material to be welded, to bond metals together. 
+    - *Mechanical methods* such as nuts and bolts can be used to tightly attach two surfaces together, in a way which can be removed easily for when maintenance is required. 
+    - Another mechanical method for metal is the use of *taps and dies*. The tap is first sued to sink a threaded hole into one surface, and the die is then used to cut a thread onto a cylindrical rod, so that the two can be screwed together. 
+
+** Plastics
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- Permanent fabrication techniques suitable for *plastic* can include...
+    - *Thermal methods* like line bending. This allows plastics to be heated, and bent along a focused point. The area to be worked is heated until soft, and then bent into the desired position. It is held in place until it cools and sets into its new shape.
+    - *Vacuum forming* is another thermal method, where a mould is formed for the part which is needed. A sheet of material (e.g. HIPS, ABS or acrylic) is heated evenly until it softens. Once soft, the mould is pushed into the plastic, and a vacuum pump turned on to pull the plastic tightly onto the mould.
+
+- Chemical methods
+    - Plastic cement (Tensol) can be used to bond two plastics. The joints need to be close-fitting, and free from grease/residue. The two surfaces are clamped together, and the solvent is applied sparingly. The glue is sucked into the joint through a capillary action. The bond will be better if the surface areas of the joins are increased (e.g. through the use of finger joints).
+
+- Redistribution /Deformation
+• a minimum of three redistribution/deformation
+
+Processes suitable for metals
+• a minimum of three redistribution/deformation processes suitable for plastics
+• a minimum of two redistribution/deformation processes suitable for woods
+
+** Manmade Boards
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- [[http://en.wikipedia.org/wiki/Engineered_wood][Manmade boards]] are created from other woods, to give specific properties (and are usually relatively cheap compared to hard and softwoods).
+- *Blockboard* is built up with a core of softwood strips bonded together with adhesive and covered with a sheet of plywood on either side. Used as a building material and for furniture manufacture including fitted kitchens / bedrooms.
+- [[http://en.wikipedia.org/wiki/Particle_board][*Chipboard*]] is made up of small chips of wood bonded together with resin and formed into sheets by compression. It is not as strong as plywood and block board but it is not expensive. Chipboard is often covered with a plastic laminate or wood veneer and used in furniture. Chipboard could contain partials of metal, grit and any other rubbish that gets taken up into a tree whilst growing, is also the most unstable board because of air pockets, will swell up to twice its thickness when damp. 	
+- *Hardboard* is made from wood fibres that have been pulped. The pulp is put under pressure until the fibres bond to produce a tough board that is smooth on one side and rough on the other. It is not as strong as the other boards. When supplied, it is smooth one side and rough the other, because of the drying process and is flexible, generally buckles at the first sign of dampness in the air, used mainly for backs of cupboards.
+- [[http://en.wikipedia.org/wiki/Medium-density_fibreboard][*MDF*]] (Medium Density Fibreboard) is quality board, which is relatively cheap. This board is composed of fine wood dust and resin pressed into a board. MDF is the most stable manmade board, and can have a ply or laminate finish added to it to make its finish more aesthetically pleasing. Low Density and High density re also available, as it water resistant MDF (which is usually green in colour). MDF can be worked, shaped and machined easily. Paint can be applied to it without the need for an undercoat or primer. Used in the building and furniture trades, as well as in schools.
+- [[http://en.wikipedia.org/wiki/Plywood][*Plywood*]] is made from veneers (thin plies) of timber with each grain layer being at right angles to each other and bonded together by resin and pressure. A number of grades are available, designed to suit a variety of situations, such as Marine plywood that is moisture resistant (although it will still warp) or weatherproof plywood. Ply is the only board that uses layers of pure wood. If the grains are laid parallel with each other it becomes flexible along the grain; if laid at right angles it becomes more rigid. 
+- All boards come in standard thicknesses of 3, 6, 9, 12, 15, 18 & 25mm.
+** Smart Materials
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- Advances in technology have yielded cutting edge, Smart materials, which have been created to provide specific properties. 
+- [[http://en.wikipedia.org/wiki/Shape-memory_alloy][*Smart wire*]] is sometimes called ‘Nitinol’, as it is a composed of nickel and titanium. It can be folded to form complex shapes quite easily and it conducts electricity, but is very expensive when compared to ordinary steel or even copper wire. However, it has properties that make it very special:
+     1. The wire has a memory - for example, if it is folded to form a shape and then heated above 90°C it returns to its original shape.
+     2. The material can also be ‘programmed’ to remember a shape. This can be achieved by folding the wire to a particular shape and clamping it in position. The wire is then heated for approximately five minutes at precisely 150° or pass an electric current through the wire. If the wire is now folded into another shape and then placed in hot water it returns to the original ‘programmed’ shape. 
+- *Muscle wire* is also a nickel and titanium alloy. At room temperature it can be stretched by a small force. However, when a small current is passed through the wire it returns to a much harder form and to its original length with a reasonable force. When in use a muscle wire can be stretched up to 8 percent of its length and still recover. However, this can only be done a few times until it breaks or stops returning to its original length. Its life cycle can be extended dramatically if it is stretched to between 3 to 5 percent of its overall length. Within this range it will go through the stretching and return cycle millions of times.
+- [[http://en.wikipedia.org/wiki/Polycaprolactone][*Polymorph*]] is a thermoplastic material that can be shaped and reshaped any number of times. it is normally supplied as granules that look like small plastic beads. In the classroom it can be heated in hot water and when it reaches 62 degrees centigrade the granules form a mass of ‘clear’ material. When removed from the hot water it can be shaped into almost any form and on cooling it becomes as solid as a material such as nylon. Although expensive, polymorph is suitable for 3D modeling as it can be shaped by hand or pressed into a shape through the use of a mold.
+- [[http://en.wikipedia.org/wiki/Quantum_tunnelling_composite][*Quantum Tunneling Composite*]] (QTC) is available as small “pills”. This material provides increasing levels of conductivity as pressure is applied to it, making it useful for dimmer switches, pressure sensors and for integrating into clothing.
+** Comparative Testing 
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: learn
+:END:
+- When selecting materials for a particular task, it may be necessary to test different samples to ensure that they will need the product specification (e.g. for weight, cost, durability, etc). 
+- [[http://en.wikipedia.org/wiki/Ultimate_tensile_strength][*Tensile strength*]] (how much something can be stretched before it breaks) can be tested in a workshop by clamping a sample, then hanging increasing amounts of weight from it until the sample breaks. Some materials will start to stretch first, whereas others hold their shape and break suddenly. 
+- [[http://en.wikipedia.org/wiki/Compressive_strength][*Compressive strength*]] (resistance to deformation by a crushing load) can be measured by finding the amount of weight required to deform a material. Some materials rupture when the load exceeds their ultimate compressive strength (e.g. Concrete), whereas other materials (e.g. Wood and some plastics) deform. With non-rupturing materials, measurements can be taken of how much force is required to deform samples by 1%, 5%, 10%, etc. 
+- [[http://en.wikipedia.org/wiki/Hardness][*Hardness*]] can be measured by taking samples of the different materials that are to be tested which have a sharp corner, and seeing which sample can scratch which material. By comparing all the materials, it will be possible to rank all the samples to establish which is the hardest. 
+- [[http://en.wikipedia.org/wiki/Toughness][*Toughness*]] can be tested by placing identical-sized samples of materials in a vice, then subjecting each one to an identical impact (e.g. a hammer blow set up by a jig, and dropped from the same angle each time), and measuring the angle the material is bent to. 
+- [[http://en.wikipedia.org/wiki/Fusibility][*Fusibility*]] can be measured by heating samples until they melt, and recording the temperature at which this occurs.
+* Recap
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: activity
+:END:
+** Past Paper Questions
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: try
+:END:
+- *June 2009, SCT1. Q4.* (a) With reference to the working properties of each material and any other factors which you consider relevant, explain the suitability of the following materials for each of the products. 
+    - Wardrobe made from pine
+	- Knife blade made from stainless steel
+    - Kitchen worktop made from plastic coated chipboard
+	- Mobile phone casing made from ABS plastic /(4× 5 marks)/
+- (b) Discuss the advantages and disadvantages of using CAD/CAM instead of jigs or templates in manufacturing situations. /(8 marks)/
+
+
+- *Specimen paper, Q1.* Explain the following terms and give an example of a specific material for each term: -
+	(a) Alloy /(2 marks)/
+	(b) Composite /(2 marks)/
+
+
+- *June 2009, Q1.* Giving an example material, explain the term "non-ferrous metal". /(2 marks)/
+
+
+- *June 2009, Q2.* Giving an example material, explain the term "thermoforming plastic". /(2 marks)/
+
+
+- *June 2010, Q1.* Explain the following terms and give an example of a specific material for each. 
+    - (a) An alloy /(2 marks)/
+    - (b) A hardwood /(2 marks)/
+
+
+- *June 2010, Q5.* (a) (i) Define the term tensile strength. /(2 marks)/
+- (a) (ii) With the aid of annotated sketches describe a suitable test that could be carried out to compare the tensile strength of a range of metals. Your answer should indicate:
+	- the approximate size of the sample
+	- the method of applying the load
+	- the data that needs to be collected
+	- the method of collecting the data
+	- how the data is analysed. /(8 marks)/
+- (b) (i) Define the term compressive strength. /(2 marks)/
+- (b) (ii) With the aid of annotated sketches describe a suitable test that could be carried out to compare the compressive strength of a range of woods. Your answer should indicate:
+	- the approximate size of the sample
+	- the method of applying the load
+	- the data that needs to be collected
+	- the method of collecting the data
+	- how the data is analysed. /(8 marks)/
+
+
+- *June 2011, Q3.* With the aid of an annotated sketch, describe a method of using heat to permanently join two pieces of metal together. /(4 marks)/
+
+
+- *June 2012, Q1.* (a) Name a man-made board that uses lamination for strength. /(1 mark)/
+     - (b) Name an alloy. /(1 mark)/
+     - (c) List the two main materials that make up the alloy you have named above. /(2 marks)/
+
+
+- *June 2012, Q3.* With the aid of an annotated sketch, describe a method of temporarily joining two pieces of metal together so they can be disassembled for maintenance purposes. /(4 marks)/
+
+
+- *June 2012, Q6.* (a) Using annotated sketches, describe a suitable test that could be carried out to compare the resistance to bending forces of a range of plastics. Your answer should indicate:
+	- the approximate size of the sample
+	- the method of applying the load
+	- the data that needs to be collected
+	- the method of collecting the data
+	- how the data is analysed. /(10 marks)/
+
+[[file:index.html][Return to homepage]]
