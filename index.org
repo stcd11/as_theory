@@ -69,11 +69,7 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: link-heading
 :END:
-* [[./13.html][Lesson 13 - Information Technology]]
-:PROPERTIES:
-:HTML_CONTAINER_CLASS: link-heading
-:END:
-* [[./14.html][Lesson 14 - Design Questions]]
+* [[./13.html][Lesson 13 - Design Questions]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: link-heading
 :END:
