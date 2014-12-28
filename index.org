@@ -21,6 +21,7 @@
 <img src=img/pencil.png width=70%>
 </center>
 #+END_HTML
+- /Note:/ Past papers going back to 2007 are available in the open drive in school, located in /G:\Systems and Control\Year 12 S&C\Past Papers\/
 * [[file:1.html][Lesson 01 - Mathematics]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: link-heading
