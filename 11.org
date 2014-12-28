@@ -16,7 +16,7 @@
 </div>
 </div>
 <center>
-<img src='./img/steel.jpg' width=40%>
+<img src='http://laserprouk.com/images/laser-x252-large-image.jpg' width=40%>
 </center>
 #+END_HTML
 
