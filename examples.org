@@ -30,6 +30,10 @@
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: link-heading
 :END:
+* [[file:examples/2012.pdf][June 2012 Paper]]
+:PROPERTIES:
+:HTML_CONTAINER_CLASS: link-heading
+:END:
 * [[./index.html][Return to homepage]]
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: link-heading
