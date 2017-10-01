@@ -108,6 +108,12 @@ In a car, a circuit is needed to ensure that the airbags only deploy when there 
 :HTML_CONTAINER_CLASS: activity
 :END:
 - There are many ways to go about fabricating an electromechanical system. It is useful to know a variety of methods for working with resistant materials. 
+- The different techniques that can be employed to make a new part or product can be broadly broken up as:
+  - *Addition/Fabrication.* Material/parts added. E.g. 3D printing complex forms with molten ABS, gluing one piece of wood to another or bolting one engine part to another.
+  - *Wastage.* Material is removed. E.g. Drilling a hole in a block of steel or filing a corner off a wooden block. 
+  - *Redistribution* Changing the shape of a material. E.g. Injection moulding to make toy parts, or melting pewter in a crucible and pouring it into a mould (casting). 
+  - [[https://www.doitpoms.ac.uk/tlplib/metal-forming-2/printall.php][*Deformation.*]] Changing a material's shape. E.g. Vacuum forming, using a pipe-bender to create a right-angle in a copper gas pipe or beating a horse-shoe into shape with a hammer. 
+
 ** Industrial Processes
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: learn
@@ -132,10 +138,12 @@ In a car, a circuit is needed to ensure that the airbags only deploy when there 
 - *Machine methods*
     1. A bandsaw will cut quickly through most woods at high speed, and can be used to cut curves – this requires training and a great deal of care.
     2. A circular saw can be used to quickly cut through or to cut grooves in straight lines at high speed.
+    3. A belt-sander can be used to remove rough edges, smoothing out the workpiece.
 
 - *CAM methods*
      1. A CNC router can be programmed (using 3d software) to carve the desired shape from a block of wood. The wood to be cut needs to be firmly secured to the bed of the machine, to ensure the work piece isn’t dislodged by the high-speed cutting bits. 
      2. A laser-cutter cuts shapes from sheet material using a tightly focused beam to cut through (and etch) thermoplastic materials. A design is created on a CAD package on the computer, then sent to the machine where it is cut. Extractor is turned on throughout and the user needs to avoid eye contact with the beam. 
+     3. A CNC lathe can cut into lengths of wood and metal to produce shapes as required. Often used for table legs, or for precisely maching parts for engines and machinery. 
 
 ** Fabrication Methods
 :PROPERTIES:
@@ -143,9 +151,7 @@ In a car, a circuit is needed to ensure that the airbags only deploy when there 
 :END:
 - Mechanical methods which work on a variety of materials are:
     - Machine screws (bolts) can be used with washers (to spread the load and help prevent breakage). Two surfaces are drilled slowly, then bolted. If requried, nylon-lined (nyloc) nuts can be used, which won't slip loose over time. 
-
     - A CNC milling machine or router can be used in a similar way to a laser cutter, but to use a physical bit to cut away at the surface of the material. Careful work with a small chisel and hammer can be used to square off any corners where needed.
-
 - Temporary fabrication techniques suitable for wood, metal and plastic. A minimum of three mechanical methods
 - Redistribution /Deformation
    - Redistribution methods are where a material is melted or formed into a new shape, eliminating waste. Injection moulding, for instance.
@@ -185,6 +191,7 @@ In a car, a circuit is needed to ensure that the airbags only deploy when there 
 :PROPERTIES:
 :HTML_CONTAINER_CLASS: try
 :END:
+- Pratice: Identify 
 - *Specimen Paper, Q3.* The plastic casing for an electronics project could be manufactured by either: -
    - one-off production,  
    - batch production, or  
@@ -194,7 +201,7 @@ In a car, a circuit is needed to ensure that the airbags only deploy when there 
 
 - One-off production
    - Production Process: /(1 mark)/
-   - Advantage: /(1 mark) /
+   - Advantage: /(1 mark)/
 
 - Batch production
    - Production Process: /(1 mark)/
